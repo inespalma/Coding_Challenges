@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inquérito sobre Hábitos Alimentares</title>
+</head>
+
+<body>
+    <h1>Inquérito sobre Hábitos Alimentares</h1>
+    <p>Este inquérito está enquadrado num estudo para a caracterização dos Hábitos Alimentares em Portugal.</p>
+    <p>Ao longo deste formulário estaremos a recolher informações suas:
+        <a href="#identificacao">Caracterização Geral</a>,
+        <a href="#habitos">Hábitos Alimentares</a>,
+        <a href="#contatos">Contatos</a>
+    </p>
+    <p>Pedimos que seja o mais honesto possível na resposta às questões que se seguem.<br>
+        O preenchimento deste questionário não deve demorar mais do que 3 minutos. Desde já agradecemos pela sua
+        colaboração!
+    </p>
+
+    <form action="https://www.runcodeschool.com" method="post">
+        <section id="identificacao">
+            <h3>Caracterização Geral</h3>
+            <fieldset>
+                <legend>Idade</legend>
+                <p>Em que faixa etária se insere?</p>
+                <p><label for="18-25">
+                        <input type="radio" name="idade" value="18-25" id="18-25"> Entre 18 e 25
+                    </label></p>
+                <p><label for="26-45">
+                        <input type="radio" name="idade" value="26-45" id="26-45"> Entre 26 e 45
+                    </label></p>
+                <p><label for="46-65">
+                        <input type="radio" name="idade" value="46-65" id="46-65"> Entre 46 e 65
+                    </label></p>
+                <p><label for="mais65">
+                        <input type="radio" name="idade" value="65+" id="mais65"> Mais de 65
+                    </label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Género</legend>
+                <p>Com que género se identifica?</p>
+                <p><label for="feminino">
+                        <input type="radio" name="genero" value="feminino" id="feminino"> Feminino
+                    </label></p>
+                <p><label for="masculino">
+                        <input type="radio" name="genero" value="masculino" id="masculino"> Masculino
+                    </label></p>
+                <p><label for="outro">
+                        <input type="radio" name="genero" value="outro" id="outro"> Outro
+                    </label></p>
+            </fieldset>
+        </section>
+
+        <section id="habitos">
+            <h3>Hábitos Alimentares</h3>
+            <fieldset>
+                <legend>Número de Refeições Diárias</legend>
+                <p>Quantas refeições faz diariamente?</p>
+                <label for="refeicoes">
+                    <select name="refeicoes" id="refeicoes" required>
+                        <option value="1">1</option>
+                        <option value="2-5">2 a 5</option>
+                        <option value="+5">Mais de 5</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Tipo de Alimentos Consumidos</legend>
+                <p>Que tipo de alimentos consome com maior regularidade?</p>
+                <p><label for="lacticinios">
+                        <input type="checkbox" name="alimentos" value="Lacticínios" id="lacticinios"> Lacticínios
+                    </label></p>
+                <p><label for="cereais">
+                        <input type="checkbox" name="alimentos" value="Cereais" id="cereais"> Cereais
+                    </label></p>
+                <p><label for="peixe">
+                        <input type="checkbox" name="alimentos" value="Peixe" id="peixe"> Peixe
+                    </label></p>
+                <p><label for="carne">
+                        <input type="checkbox" name="alimentos" value="Carne" id="carne"> Carne
+                    </label></p>
+                <p><label for="vegetais">
+                        <input type="checkbox" name="alimentos" value="Vegetais" id="vegetais"> Vegetais
+                    </label></p>
+                <p><label for="outros">
+                        <input type="checkbox" name="alimentos" value="Outros" id="outros"> Outros? Indique quais:
+                        <input type="text" name="indique" id="indique">
+                    </label></p>
+            </fieldset>
+        </section>
+        <section id="contatos">
+            <h3>Contatos</h3>
+            <fieldset>
+                <legend>E-mail e Telefone</legend>
+                <p>Caso queira receber mais informações sobre o nosso estudo deixe os seus contatos.</p>
+                <p><label for="email">
+                        Por favor introduza o seu e-mail:<br>
+                        <input type="email" name="email" id="email" required>
+                    </label></p>
+                <p><label for="telefone">
+                        Indique o seu número de telefone:<br>
+                        <input type="tel" name="telefone" id="telefone" required pattern="[0-9]{9}">
+                    </label></p>
+            </fieldset>
+        </section>
+        <button type="submit">Submeter Respostas</button>
+    </form>
+</body>
+
+</html>
