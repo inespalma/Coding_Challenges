@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Formulário de Inscrição no Power Up</title>
+</head>
+
+<body>
+    <h1>Formulário de Inscrição no Power Up</h1>
+    <img src="/assets/exercises/html/images_cap7_ex2/inscricoes-abertas.jpg" width="240" />
+    <form action="http://www.bytes4future.pt">
+        <h3>Identificação</h3>
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required />
+        </p>
+        <p>
+            <label for="datadenascimento">Data de Nascimento:</label>
+            <input type="date" name="datadenascimento" id="datadenascimento" required />
+        </p>
+        <h3>Contactos</h3>
+        <p>
+            <label for="email">Por favor introduza o seu e-mail:</label>
+            <input type="email" name="Email" id="email" required />
+        </p>
+        <p>
+            <label for="telefone">Indique o seu número de telefone:</label>
+            <input type="tel" name="telefone" id="telefone" />
+        </p>
+
+        <h3>Power Ups</h3>
+        <p>Selecione o Power Up onde quer se inscrever:
+            <select name="powerup" id="powerup" required>
+                <option value="1">Power Up #1</option>
+                <option value="2">Power Up #2</option>
+                <option value="3">Power Up #3</option>
+                <option value="4">Power Up #4</option>
+                <option value="5">Power Up #5</option>
+                <option value="6">Power Up #6</option>
+                <option value="7">Power Up #7</option>
+                <option value="8">Power Up #8</option>
+            </select>
+        </p>
+
+        <button type="submit">Submeter Inscrição</button>
+        <p><sub>Ao submeter este formulário está a concordar com os <a
+                    href="https://www.bytes4future.pt/termos-e-condicoes-gerais">Termos e Condições</a> e a <a
+                    href="https://www.bytes4future.pt/politica-de-privacidade">Política de Privacidade</a>.</sub>
+        </p>
+    </form>
+
+</body>
+
+</html>
