@@ -1,4 +1,4 @@
-function linguagemHacker(string) {
+function replaceStringToInt(string) {
   string = string.replace(/a/g, "4").replace(/A/g, "4");
   string = string.replace(/e/g, "3").replace(/E/g, "3");
   string = string.replace(/i/g, "1").replace(/I/g, "1");
@@ -8,4 +8,4 @@ function linguagemHacker(string) {
   return string;
 }
 
-console.log(linguagemHacker("hacker time"));
+console.log(replaceStringToInt("Hello, hacker time. AEIOS."));
