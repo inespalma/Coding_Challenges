@@ -1,0 +1,18 @@
+{
+    "sourceFile": "oneBooleanIsTrue.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1732808267474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1732808267474,
+            "name": "Commit-0",
+            "content": "//Returns true if ONLY one of them is true (2 arguments)\r\nfunction oneBooleanIsTrue(boolean1, boolean2) {\r\n  return (boolean1 && !boolean2) || (!boolean1 && boolean2);\r\n}\r\n\r\nconsole.log(oneBooleanIsTrue(false, false)); //false\r\nconsole.log(oneBooleanIsTrue(true, true)); //false\r\nconsole.log(oneBooleanIsTrue(false, true)); //true\r\nconsole.log(oneBooleanIsTrue(true, false)); //true\r\n\r\n\r\n//Returns true if ONLY one of them is true (3 arguments)\r\nfunction oneIsTrue(a, b, c) {\r\n  return a + b + c === 1;\r\n}\r\n\r\nconsole.log(oneIsTrue(false, false, false)); //false\r\nconsole.log(oneIsTrue(true, true, true)); //false\r\nconsole.log(oneIsTrue(true, false, true)); //false\r\nconsole.log(oneIsTrue(false, false, true)); //true\r\n\r\n\r\n// Returns true if only one element in the array is true ( works with more then 3 arguments)\r\nfunction oneInArrayIsTrue(arr) {\r\n  return arr.filter(Boolean).length === 1; // Filters out falsy values and checks if exactly one is true\r\n}\r\n\r\nconsole.log(oneInArrayIsTrue([false, false, false])); // false\r\nconsole.log(oneInArrayIsTrue([true, true, true])); // false\r\nconsole.log(oneInArrayIsTrue([true, false, true])); // false\r\nconsole.log(oneInArrayIsTrue([false, false, true])); // true\r\n"
+        }
+    ]
+}

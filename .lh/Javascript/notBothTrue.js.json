@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Javascript/notBothTrue.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1732807382969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1732807382969,
+            "name": "Commit-0",
+            "content": "function notBothTrue(a, b) {\n    // Returns true if NOT both are true\n    return !(a && b); \n  }\n  \n  console.log(notBothTrue(true, true)); // false (both are true)\n  console.log(notBothTrue(true, false)); // true (not both are true)\n  console.log(notBothTrue(false, true)); // true (not both are true)\n  console.log(notBothTrue(false, false)); // true (not both are true)"
+        }
+    ]
+}
