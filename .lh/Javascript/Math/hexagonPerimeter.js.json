@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Javascript/Math/hexagonPerimeter.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1733068687461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1733068687461,
+            "name": "Commit-0",
+            "content": "function hexagonPerimeter(side) {\n  return 6 * side;\n}\n\nconsole.log(hexagonPerimeter(5));"
+        }
+    ]
+}

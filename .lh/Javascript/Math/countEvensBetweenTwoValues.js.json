@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Javascript/Math/countEvensBetweenTwoValues.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1733086764018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1733086764018,
+            "name": "Commit-0",
+            "content": "function countEvensBetweenTwoValues(value1, value2) {\n  if (value1 === value2) {\n    return \"Please enter two different values.\";\n  }\n\n  let evens = 0;\n  let lower = Math.min(value1, value2);\n  let upper = Math.max(value1, value2);\n\n  for (let i = lower; i <= upper; i++) {\n    if (i % 2 === 0) {\n      evens++;\n    }\n  }\n  return evens;\n}\n\nconsole.log(countEvensBetweenTwoValues(1, 10)); // Output: 5\nconsole.log(countEvensBetweenTwoValues(5, 5)); // Output: Please enter two different values.\nconsole.log(countEvensBetweenTwoValues(2, 8)); // Output: 4\nconsole.log(countEvensBetweenTwoValues(10, 5)); // Output: 3\nconsole.log(countEvensBetweenTwoValues(-5, 5)); // Output: 5\n"
+        }
+    ]
+}

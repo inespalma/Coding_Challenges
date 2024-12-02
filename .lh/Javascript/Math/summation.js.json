@@ -1,0 +1,58 @@
+{
+    "sourceFile": "Javascript/Math/summation.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1733081327834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733081338356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n function somatorioAteN(n) {\n   let i = 0;\n   let n = 0;\n   while (i <= n) {\n-    return (n += i);\n+    return n += i\n     i++;\n   }\n }\n"
+                },
+                {
+                    "date": 1733081344192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n function somatorioAteN(n) {\n   let i = 0;\n   let n = 0;\n   while (i <= n) {\n-    return n += i\n+    return n;\n     i++;\n   }\n }\n"
+                },
+                {
+                    "date": 1733081384910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n function somatorioAteN(n) {\n   let i = 0;\n   let n = 0;\n   while (i <= n) {\n-    return n;\n-    i++;\n+    console.log(i);\n+    console.log(n);\n   }\n }\n"
+                },
+                {
+                    "date": 1733081391502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,7 @@\n   let n = 0;\n   while (i <= n) {\n     console.log(i);\n     console.log(n);\n+    i++;\n   }\n }\n"
+                },
+                {
+                    "date": 1733081417714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n function somatorioAteN(n) {\n   let i = 0;\n-  let n = 0;\n   while (i <= n) {\n     console.log(i);\n     console.log(n);\n     i++;\n"
+                },
+                {
+                    "date": 1733081484976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n function somatorioAteN(n) {\n-  let i = 0;\n+  let sum = 0;\n   while (i <= n) {\n-    console.log(i);\n-    console.log(n);\n+    sum += i;\n     i++;\n   }\n }\n"
+                },
+                {
+                    "date": 1733081509654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,6 @@\n   while (i <= n) {\n     sum += i;\n     i++;\n   }\n+  return sum;\n }\n"
+                },
+                {
+                    "date": 1733081525085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,4 +5,6 @@\n     i++;\n   }\n   return sum;\n }\n+\n+console.log(somatorioAteN(5));\n"
+                },
+                {
+                    "date": 1733081541614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n function somatorioAteN(n) {\n   let sum = 0;\n+  let i = 0;\n   while (i <= n) {\n     sum += i;\n     i++;\n   }\n"
+                },
+                {
+                    "date": 1733081653176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-function somatorioAteN(n) {\n+function summationUpToN(n) {\n   let sum = 0;\n   let i = 0;\n   while (i <= n) {\n     sum += i;\n@@ -7,5 +7,5 @@\n   }\n   return sum;\n }\n \n-console.log(somatorioAteN(5));\n+console.log(summationUpToN(5)); // Output: 15\n"
+                }
+            ],
+            "date": 1733081327834,
+            "name": "Commit-0",
+            "content": "function somatorioAteN(n) {\n  let i = 0;\n  let n = 0;\n  while (i <= n) {\n    return (n += i);\n    i++;\n  }\n}\n"
+        }
+    ]
+}

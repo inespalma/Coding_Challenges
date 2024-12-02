@@ -1,0 +1,98 @@
+{
+    "sourceFile": "Javascript/Math/contaNumeroDeDivisoesPorDois.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 20,
+            "patches": [
+                {
+                    "date": 1733086858224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733086869173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,8 @@\n     if (i % 2 === 0) {\n       counterDivision++;\n     }\n   }\n+  return counterDivision;\n }\n+\n+console.log(contaNumeroDeDivisoesPorDois(10));  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733086876088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,5 @@\n   }\n   return counterDivision;\n }\n \n-console.log(contaNumeroDeDivisoesPorDois(10));  \n\\ No newline at end of file\n+console.log(contaNumeroDeDivisoesPorDois(4));  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733086976477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,13 @@\n-function contaNumeroDeDivisoesPorDois(n) {\n-  let counterDivision = 0;\n+if (number <= 0) {\n+    return \"Please enter a positive number.\";\n+  }\n \n-  for (let i = 1; i <= n; i++) {\n-    if (i % 2 === 0) {\n-      counterDivision++;\n-    }\n+  let count = 0;\n+\n\\ No newline at end of file\n+  while (number >= 2) {\n+    number = Math.floor(number / 2);\n+    count++;\n   }\n-  return counterDivision;\n-}\n \n-console.log(contaNumeroDeDivisoesPorDois(4));  \n+  return count;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733087015819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n-if (number <= 0) {\n+function countIntegerDivisionsByTwo(number) {\n+  if (number <= 0) {\n     return \"Please enter a positive number.\";\n   }\n \n   let count = 0;\n@@ -9,5 +10,11 @@\n     count++;\n   }\n \n   return count;\n-}\n\\ No newline at end of file\n+}\n+\n+// Exemplos de uso:\n+console.log(countIntegerDivisionsByTwo(10)); // Output: 3 (10 → 5 → 2 → 1)\n+console.log(countIntegerDivisionsByTwo(64)); // Output: 6 (64 → 32 → 16 → 8 → 4 → 2 → 1)\n+console.log(countIntegerDivisionsByTwo(1)); // Output: 0 (1 já é menor que 2)\n+console.log(countIntegerDivisionsByTwo(-5)); // Output: \"Please enter a positive number.\"\n"
+                },
+                {
+                    "date": 1733087201086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,20 +1,19 @@\n-function countIntegerDivisionsByTwo(number) {\n+function countHalvingsUntilLessThanTwo(number) {\n   if (number <= 0) {\n     return \"Please enter a positive number.\";\n   }\n \n-  let count = 0;\n+  let count;\n \n-  while (number >= 2) {\n-    number = Math.floor(number / 2);\n+  for (count = 0; number >= 2; number = Math.floor(number / 2)) {\n     count++;\n   }\n \n   return count;\n }\n \n // Exemplos de uso:\n-console.log(countIntegerDivisionsByTwo(10)); // Output: 3 (10 → 5 → 2 → 1)\n-console.log(countIntegerDivisionsByTwo(64)); // Output: 6 (64 → 32 → 16 → 8 → 4 → 2 → 1)\n-console.log(countIntegerDivisionsByTwo(1)); // Output: 0 (1 já é menor que 2)\n-console.log(countIntegerDivisionsByTwo(-5)); // Output: \"Please enter a positive number.\"\n+console.log(countHalvingsUntilLessThanTwo(10)); // Output: 3 (10 → 5 → 2 → 1)\n+console.log(countHalvingsUntilLessThanTwo(64)); // Output: 6 (64 → 32 → 16 → 8 → 4 → 2 → 1)\n+console.log(countHalvingsUntilLessThanTwo(1)); // Output: 0 (1 já é menor que 2)\n+console.log(countHalvingsUntilLessThanTwo(-5)); // Output: \"Pleas\n"
+                },
+                {
+                    "date": 1733087230707,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,9 @@\n   if (number <= 0) {\n     return \"Please enter a positive number.\";\n   }\n \n-  let count;\n-\n-  for (count = 0; number >= 2; number = Math.floor(number / 2)) {\n+  for (let count = 0; number >= 2; number = Math.floor(number / 2)) {\n     count++;\n   }\n \n   return count;\n"
+                },
+                {
+                    "date": 1733087236432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,11 @@\n   if (number <= 0) {\n     return \"Please enter a positive number.\";\n   }\n \n-  for (let count = 0; number >= 2; number = Math.floor(number / 2)) {\n+  let count;\n+\n+  for ( letcount = 0; number >= 2; number = Math.floor(number / 2)) {\n     count++;\n   }\n \n   return count;\n"
+                },
+                {
+                    "date": 1733087242236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   }\n \n   let count;\n \n-  for ( letcount = 0; number >= 2; number = Math.floor(number / 2)) {\n+  for (count = 0; number >= 2; number = Math.floor(number / 2)) {\n     count++;\n   }\n \n   return count;\n"
+                },
+                {
+                    "date": 1733087295632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,9 @@\n   if (number <= 0) {\n     return \"Please enter a positive number.\";\n   }\n \n-  let count;\n-\n-  for (count = 0; number >= 2; number = Math.floor(number / 2)) {\n+  for (let count = 0; number >= 2; number = Math.floor(number / 2)) {\n     count++;\n   }\n \n   return count;\n"
+                },
+                {
+                    "date": 1733087366376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,10 @@\n   if (number <= 0) {\n     return \"Please enter a positive number.\";\n   }\n \n+  let count;\n+\n   for (let count = 0; number >= 2; number = Math.floor(number / 2)) {\n     count++;\n   }\n \n"
+                },
+                {
+                    "date": 1733087375884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   }\n \n   let count;\n \n-  for (let count = 0; number >= 2; number = Math.floor(number / 2)) {\n+  for (count = 0; number >= 2; number = Math.floor(number / 2)) {\n     count++;\n   }\n \n   return count;\n"
+                },
+                {
+                    "date": 1733087541214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,19 +1,18 @@\n-function countHalvingsUntilLessThanTwo(number) {\n-  if (number <= 0) {\n-    return \"Please enter a positive number.\";\n-  }\n+function contaNumeroDeDivisoesPorDois(n) {\n+    if (n <= 0) {\n+        return \"Please enter a positive number.\"\n+    }\n \n-  let count;\n+    let count;\n \n-  for (count = 0; number >= 2; number = Math.floor(number / 2)) {\n-    count++;\n-  }\n-\n-  return count;\n+    for (count = 0; n >= 2; Math.floor(n / 2)) {\n+        count++;\n+    }\n+    return count;\n }\n \n // Exemplos de uso:\n-console.log(countHalvingsUntilLessThanTwo(10)); // Output: 3 (10 → 5 → 2 → 1)\n+console.log(contaNumeroDeDivisoesPorDois(10)); // Output: 3 (10 → 5 → 2 → 1)\n console.log(countHalvingsUntilLessThanTwo(64)); // Output: 6 (64 → 32 → 16 → 8 → 4 → 2 → 1)\n console.log(countHalvingsUntilLessThanTwo(1)); // Output: 0 (1 já é menor que 2)\n console.log(countHalvingsUntilLessThanTwo(-5)); // Output: \"Pleas\n"
+                },
+                {
+                    "date": 1733087550147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,19 @@\n-function contaNumeroDeDivisoesPorDois(n) {\n-    if (n <= 0) {\n-        return \"Please enter a positive number.\"\n-    }\n+function countHalvingsUntilLessThanTwo(number) {\n+  if (number <= 0) {\n+    return \"Please enter a positive number.\";\n+  }\n \n-    let count;\n+  let count;\n \n-    for (count = 0; n >= 2; Math.floor(n / 2)) {\n-        count++;\n-    }\n-    return count;\n+  for (count = 0; number >= 2; number = Math.floor(number / 2)) {\n+    count++;\n+  }\n+\n+  return count;\n }\n \n // Exemplos de uso:\n-console.log(contaNumeroDeDivisoesPorDois(10)); // Output: 3 (10 → 5 → 2 → 1)\n+console.log(countHalvingsUntilLessThanTwo(10)); // Output: 3 (10 → 5 → 2 → 1)\n console.log(countHalvingsUntilLessThanTwo(64)); // Output: 6 (64 → 32 → 16 → 8 → 4 → 2 → 1)\n console.log(countHalvingsUntilLessThanTwo(1)); // Output: 0 (1 já é menor que 2)\n console.log(countHalvingsUntilLessThanTwo(-5)); // Output: \"Pleas\n"
+                },
+                {
+                    "date": 1733087584440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,19 +1,20 @@\n-function countHalvingsUntilLessThanTwo(number) {\n+function countIntegerDivisionsByTwo(number) {\n   if (number <= 0) {\n     return \"Please enter a positive number.\";\n   }\n \n-  let count;\n+  let count = 0;\n \n-  for (count = 0; number >= 2; number = Math.floor(number / 2)) {\n+  while (number >= 2) {\n+    number = Math.floor(number / 2);\n     count++;\n   }\n \n   return count;\n }\n \n // Exemplos de uso:\n-console.log(countHalvingsUntilLessThanTwo(10)); // Output: 3 (10 → 5 → 2 → 1)\n-console.log(countHalvingsUntilLessThanTwo(64)); // Output: 6 (64 → 32 → 16 → 8 → 4 → 2 → 1)\n-console.log(countHalvingsUntilLessThanTwo(1)); // Output: 0 (1 já é menor que 2)\n-console.log(countHalvingsUntilLessThanTwo(-5)); // Output: \"Pleas\n+console.log(countIntegerDivisionsByTwo(10)); // Output: 3 (10 → 5 → 2 → 1)\n+console.log(countIntegerDivisionsByTwo(64)); // Output: 6 (64 → 32 → 16 → 8 → 4 → 2 → 1)\n+console.log(countIntegerDivisionsByTwo(1)); // Output: 0 (1 já é menor que 2)\n+console.log(countIntegerDivisionsByTwo(-5)); // Output: \"Please enter a positive number.\"\n"
+                },
+                {
+                    "date": 1733087608060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,6 +15,6 @@\n \n // Exemplos de uso:\n console.log(countIntegerDivisionsByTwo(10)); // Output: 3 (10 → 5 → 2 → 1)\n console.log(countIntegerDivisionsByTwo(64)); // Output: 6 (64 → 32 → 16 → 8 → 4 → 2 → 1)\n-console.log(countIntegerDivisionsByTwo(1)); // Output: 0 (1 já é menor que 2)\n+console.log(countIntegerDivisionsByTwo(1));  // Output: 0 (1 já é menor que 2)\n console.log(countIntegerDivisionsByTwo(-5)); // Output: \"Please enter a positive number.\"\n"
+                },
+                {
+                    "date": 1733087626186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,20 +1,20 @@\n-function countIntegerDivisionsByTwo(number) {\n-  if (number <= 0) {\n-    return \"Please enter a positive number.\";\n+function countHalvingsUntilLessThanTwo(number) {\n+    if (number <= 0) {\n+      return \"Please enter a positive number.\";\n+    }\n+  \n+    let count;\n+    \n+    for (count = 0; number >= 2; number = Math.floor(number / 2)) {\n+      count++;\n+    }\n+  \n+    return count;\n   }\n-\n-  let count = 0;\n-\n-  while (number >= 2) {\n-    number = Math.floor(number / 2);\n-    count++;\n-  }\n-\n-  return count;\n-}\n-\n-// Exemplos de uso:\n-console.log(countIntegerDivisionsByTwo(10)); // Output: 3 (10 → 5 → 2 → 1)\n-console.log(countIntegerDivisionsByTwo(64)); // Output: 6 (64 → 32 → 16 → 8 → 4 → 2 → 1)\n-console.log(countIntegerDivisionsByTwo(1));  // Output: 0 (1 já é menor que 2)\n-console.log(countIntegerDivisionsByTwo(-5)); // Output: \"Please enter a positive number.\"\n+  \n+  // Exemplos de uso:\n+  console.log(countHalvingsUntilLessThanTwo(10)); // Output: 3 (10 → 5 → 2 → 1)\n+  console.log(countHalvingsUntilLessThanTwo(64)); // Output: 6 (64 → 32 → 16 → 8 → 4 → 2 → 1)\n+  console.log(countHalvingsUntilLessThanTwo(1));  // Output: 0 (1 já é menor que 2)\n+  console.log(countHalvingsUntilLessThanTwo(-5)); // Output: \"Pleas\n+  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733088140776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,20 +1,19 @@\n function countHalvingsUntilLessThanTwo(number) {\n-    if (number <= 0) {\n-      return \"Please enter a positive number.\";\n-    }\n-  \n-    let count;\n-    \n-    for (count = 0; number >= 2; number = Math.floor(number / 2)) {\n-      count++;\n-    }\n-  \n-    return count;\n+  if (number <= 0) {\n+    return \"Please enter a positive number.\";\n   }\n-  \n-  // Exemplos de uso:\n-  console.log(countHalvingsUntilLessThanTwo(10)); // Output: 3 (10 → 5 → 2 → 1)\n-  console.log(countHalvingsUntilLessThanTwo(64)); // Output: 6 (64 → 32 → 16 → 8 → 4 → 2 → 1)\n-  console.log(countHalvingsUntilLessThanTwo(1));  // Output: 0 (1 já é menor que 2)\n\\ No newline at end of file\n-  console.log(countHalvingsUntilLessThanTwo(-5)); // Output: \"Pleas\n-  \n+\n+  let count;\n+\n+  for (count = 0; number >= 2; number = Math.floor(number / 2)) {\n+    count++;\n+  }\n+\n+  return count;\n+}\n+\n+// Exemplos de uso:\n+console.log(countHalvingsUntilLessThanTwo(10)); // Output: 3 (10 → 5 → 2 → 1)\n+console.log(countHalvingsUntilLessThanTwo(64)); // Output: 6 (64 → 32 → 16 → 8 → 4 → 2 → 1)\n+console.log(countHalvingsUntilLessThanTwo(1)); // Output: 0 \n+console.log(countHalvingsUntilLessThanTwo(-5)); // Output: \"Please enter a positive number.\"\n"
+                },
+                {
+                    "date": 1733088158267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-function countHalvingsUntilLessThanTwo(number) {\n+function countDivisionsUntilLessThanTwo(number) {\n   if (number <= 0) {\n     return \"Please enter a positive number.\";\n   }\n \n@@ -12,8 +12,8 @@\n   return count;\n }\n \n // Exemplos de uso:\n-console.log(countHalvingsUntilLessThanTwo(10)); // Output: 3 (10 → 5 → 2 → 1)\n-console.log(countHalvingsUntilLessThanTwo(64)); // Output: 6 (64 → 32 → 16 → 8 → 4 → 2 → 1)\n-console.log(countHalvingsUntilLessThanTwo(1)); // Output: 0 \n-console.log(countHalvingsUntilLessThanTwo(-5)); // Output: \"Please enter a positive number.\"\n+console.log(countDivisionsUntilLessThanTwo(10)); // Output: 3 (10 → 5 → 2 → 1)\n+console.log(countDivisionsUntilLessThanTwo(64)); // Output: 6 (64 → 32 → 16 → 8 → 4 → 2 → 1)\n+console.log(countDivisionsUntilLessThanTwo(1)); // Output: 0\n+console.log(countDivisionsUntilLessThanTwo(-5)); // Output: \"Please enter a positive number.\"\n"
+                },
+                {
+                    "date": 1733088204957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,6 +14,6 @@\n \n // Exemplos de uso:\n console.log(countDivisionsUntilLessThanTwo(10)); // Output: 3 (10 → 5 → 2 → 1)\n console.log(countDivisionsUntilLessThanTwo(64)); // Output: 6 (64 → 32 → 16 → 8 → 4 → 2 → 1)\n-console.log(countDivisionsUntilLessThanTwo(1)); // Output: 0\n+console.log(countDivisionsUntilLessThanTwo(1)); // Output: 0 (Number 1 is less than 2)\n console.log(countDivisionsUntilLessThanTwo(-5)); // Output: \"Please enter a positive number.\"\n"
+                },
+                {
+                    "date": 1733088219705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,8 @@\n \n   return count;\n }\n \n-// Exemplos de uso:\n console.log(countDivisionsUntilLessThanTwo(10)); // Output: 3 (10 → 5 → 2 → 1)\n console.log(countDivisionsUntilLessThanTwo(64)); // Output: 6 (64 → 32 → 16 → 8 → 4 → 2 → 1)\n console.log(countDivisionsUntilLessThanTwo(1)); // Output: 0 (Number 1 is less than 2)\n console.log(countDivisionsUntilLessThanTwo(-5)); // Output: \"Please enter a positive number.\"\n"
+                }
+            ],
+            "date": 1733086858224,
+            "name": "Commit-0",
+            "content": "function contaNumeroDeDivisoesPorDois(n) {\n  let counterDivision = 0;\n\n  for (let i = 1; i <= n; i++) {\n    if (i % 2 === 0) {\n      counterDivision++;\n    }\n  }\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "sourceFile": "Javascript/Math/factorial.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 18,
+            "patches": [
+                {
+                    "date": 1733081813227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733081908104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n function factorialN(n) {\n-  let i = 0;\n-  let result = 0;\n+  let i = 1;\n+  let result = 1;\n   while (i < n) {\n     result *= i + 1;\n     i++;\n   }\n+  return result;\n }\n"
+                },
+                {
+                    "date": 1733081914747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,4 +6,6 @@\n     i++;\n   }\n   return result;\n }\n+\n+console.log(factorialN(5));\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733081934879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n function factorialN(n) {\n   let i = 1;\n   let result = 1;\n   while (i < n) {\n-    result *= i + 1;\n+    result *= i ;\n     i++;\n   }\n   return result;\n }\n"
+                },
+                {
+                    "date": 1733081950128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n function factorialN(n) {\n   let i = 1;\n   let result = 1;\n-  while (i < n) {\n-    result *= i ;\n+  while (i =< n) {\n+    result *= i;\n     i++;\n   }\n   return result;\n }\n"
+                },
+                {
+                    "date": 1733081961975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n function factorialN(n) {\n   let i = 1;\n   let result = 1;\n-  while (i =< n) {\n+  while (i <= n) {\n     result *= i;\n     i++;\n   }\n   return result;\n"
+                },
+                {
+                    "date": 1733082379579,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,12 @@\n function factorialN(n) {\n-  let i = 1;\n-  let result = 1;\n+  let i = 1n;\n+  let result = 1n;\n+\n   while (i <= n) {\n     result *= i;\n-    i++;\n+    i += 1n;\n   }\n\\ No newline at end of file\n   return result;\n }\n \n-console.log(factorialN(5));\n+console.log(factorialN(5));\n"
+                },
+                {
+                    "date": 1733082541285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   let result = 1n;\n \n   while (i <= n) {\n     result *= i;\n-    i += 1n;\n+    i++;\n   }\n   return result;\n }\n \n"
+                },
+                {
+                    "date": 1733082606323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,5 @@\n   }\n   return result;\n }\n \n-console.log(factorialN(5));\n\\ No newline at end of file\n+console.log(factorialN(170));\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733082621593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,6 @@\n   }\n   return result;\n }\n \n-console.log(factorialN(170));\n\\ No newline at end of file\n+console.log(factorialN(170));\n+console.log(factorialN(171));\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733082628415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,5 @@\n   return result;\n }\n \n console.log(factorialN(170));\n-console.log(factorialN(171));\n\\ No newline at end of file\n+console.log(result(171));\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733082635890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,5 @@\n   return result;\n }\n \n console.log(factorialN(170));\n-console.log(result(171));\n\\ No newline at end of file\n+console.log(result);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733082649864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,5 @@\n   return result;\n }\n \n console.log(factorialN(170));\n-console.log(result);\n\\ No newline at end of file\n+console.log((result *= i));\n"
+                },
+                {
+                    "date": 1733082673320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,5 @@\n   return result;\n }\n \n console.log(factorialN(170));\n-console.log((result *= i));\n+console.log(i);\n"
+                },
+                {
+                    "date": 1733082686424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,12 @@\n   let i = 1n;\n   let result = 1n;\n \n   while (i <= n) {\n+      console.log(i);\n     result *= i;\n     i++;\n   }\n   return result;\n }\n \n console.log(factorialN(170));\n-console.log(i);\n"
+                },
+                {
+                    "date": 1733082704151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n   let i = 1n;\n   let result = 1n;\n \n   while (i <= n) {\n-      console.log(i);\n     result *= i;\n     i++;\n   }\n   return result;\n"
+                },
+                {
+                    "date": 1733082725824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n   let i = 1n;\n   let result = 1n;\n \n   while (i <= n) {\n+    console.log(result);\n     result *= i;\n     i++;\n   }\n   return result;\n"
+                },
+                {
+                    "date": 1733082744831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   let i = 1n;\n   let result = 1n;\n \n   while (i <= n) {\n-    console.log(result);\n+    console.log(result[i]);\n     result *= i;\n     i++;\n   }\n   return result;\n"
+                },
+                {
+                    "date": 1733082752294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n   let i = 1n;\n   let result = 1n;\n \n   while (i <= n) {\n-    console.log(result[i]);\n     result *= i;\n     i++;\n   }\n   return result;\n"
+                }
+            ],
+            "date": 1733081813227,
+            "name": "Commit-0",
+            "content": "function factorialN(n) {\n  let i = 0;\n  let result = 0;\n  while (i < n) {\n    result *= i + 1;\n    i++;\n  }\n}\n"
+        }
+    ]
+}

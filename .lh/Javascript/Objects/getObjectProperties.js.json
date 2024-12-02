@@ -1,0 +1,58 @@
+{
+    "sourceFile": "Javascript/Objects/getObjectProperties.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1733098444422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733098450538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n function obtemPropriedades(objeto) {\n   return Object.keys(objeto);\n }\n+\n console.log(obtemPropriedades({ a: 1, b: 2 })); // ['a', 'b']\n"
+                },
+                {
+                    "date": 1733098481962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n function obtemPropriedades(objeto) {\n   return Object.keys(objeto);\n }\n \n-console.log(obtemPropriedades({ a: 1, b: 2 })); // ['a', 'b']\n+console.log(obtemPropriedades({ a: 1, b: 2 }));\n+// Output: ['a', 'b']\n"
+                },
+                {
+                    "date": 1733098527650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,6 @@\n   return Object.keys(objeto);\n }\n \n console.log(obtemPropriedades({ a: 1, b: 2 }));\n+console.log(obtemPropriedades({ a: 1, b: 2, c: 3 }));\n // Output: ['a', 'b']\n"
+                },
+                {
+                    "date": 1733098624062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n function obtemPropriedades(objeto) {\n-  return Object.keys(objeto);\n+  return Object.values(objeto);\n }\n \n console.log(obtemPropriedades({ a: 1, b: 2 }));\n console.log(obtemPropriedades({ a: 1, b: 2, c: 3 }));\n"
+                },
+                {
+                    "date": 1733098650378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,10 @@\n function obtemPropriedades(objeto) {\n-  return Object.values(objeto);\n+  return Object.keys(objeto);\n }\n \n console.log(obtemPropriedades({ a: 1, b: 2 }));\n-console.log(obtemPropriedades({ a: 1, b: 2, c: 3 }));\n // Output: ['a', 'b']\n+\n+function obtemPropriedades(objeto) {\n+  return Object.values(objeto);\n+}\n"
+                },
+                {
+                    "date": 1733098684764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,4 +7,6 @@\n \n function obtemPropriedades(objeto) {\n   return Object.values(objeto);\n }\n+\n+// Output: [ 1, 2]\n"
+                },
+                {
+                    "date": 1733098769338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,13 @@\n-function obtemPropriedades(objeto) {\n+function getObjectProperties(objeto) {\n   return Object.keys(objeto);\n }\n \n-console.log(obtemPropriedades({ a: 1, b: 2 }));\n+console.log(getObjectProperties({ a: 1, b: 2 }));\n // Output: ['a', 'b']\n \n-function obtemPropriedades(objeto) {\n-  return Object.values(objeto);\n+function getObjectValuePropertie(value) {\n+  return Object.values(value);\n }\n \n+console.log(getObjectProperties({ a: 1, b: 2 }));\n // Output: [ 1, 2]\n"
+                },
+                {
+                    "date": 1733098794380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,6 @@\n function getObjectValuePropertie(value) {\n   return Object.values(value);\n }\n \n-console.log(getObjectProperties({ a: 1, b: 2 }));\n+console.log(getObjectValuePropertie({ a: 1, b: 2 }));\n // Output: [ 1, 2]\n"
+                },
+                {
+                    "date": 1733098901503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n \n console.log(getObjectProperties({ a: 1, b: 2 }));\n // Output: ['a', 'b']\n \n-function getObjectValuePropertie(value) {\n-  return Object.values(value);\n+function getObjectValues(objeto) {\n+  return Object.values(objeto);\n }\n \n-console.log(getObjectValuePropertie({ a: 1, b: 2 }));\n+console.log(getObjectValues({ a: 1, b: 2 }));\n // Output: [ 1, 2]\n"
+                },
+                {
+                    "date": 1733098917526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n-function getObjectProperties(objeto) {\n-  return Object.keys(objeto);\n+function getObjectProperties(object) {\n+  return Object.keys(object);\n }\n \n console.log(getObjectProperties({ a: 1, b: 2 }));\n // Output: ['a', 'b']\n \n-function getObjectValues(objeto) {\n-  return Object.values(objeto);\n+function getObjectValues(object) {\n+  return Object.values(object);\n }\n \n console.log(getObjectValues({ a: 1, b: 2 }));\n // Output: [ 1, 2]\n"
+                }
+            ],
+            "date": 1733098444422,
+            "name": "Commit-0",
+            "content": "function obtemPropriedades(objeto) {\n  return Object.keys(objeto);\n}\nconsole.log(obtemPropriedades({ a: 1, b: 2 })); // ['a', 'b']\n"
+        }
+    ]
+}

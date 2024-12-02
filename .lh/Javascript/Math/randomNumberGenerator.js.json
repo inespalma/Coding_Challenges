@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Javascript/Math/randomNumberGenerator.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1733000912049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733000965268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n-function aleatorioEntre(min, max) {\n-    let nrAleatorio = Math.floor((Math.random() * (max - min + 1)) + min);\n-    return nrAleatorio;\n-  }\n-  \n-  console.log(aleatorioEntre(1,20))\n\\ No newline at end of file\n+// Function to generate a random number between min and max (inclusive)\n+function getRandomBetween(min, max) {\n+  let randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;\n+  return randomNumber;\n+}\n+\n+console.log(getRandomBetween(1, 20));\n"
+                }
+            ],
+            "date": 1733000912049,
+            "name": "Commit-0",
+            "content": "function aleatorioEntre(min, max) {\n    let nrAleatorio = Math.floor((Math.random() * (max - min + 1)) + min);\n    return nrAleatorio;\n  }\n  \n  console.log(aleatorioEntre(1,20))"
+        }
+    ]
+}

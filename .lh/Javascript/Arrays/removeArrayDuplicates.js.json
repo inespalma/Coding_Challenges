@@ -1,0 +1,42 @@
+{
+    "sourceFile": "Javascript/Arrays/removeArrayDuplicates.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1733126589665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733126598888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,4 +3,5 @@\n   return withoutDup;\n }\n \n console.log(arraySemDuplicados(\"[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\"));\n+// Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733126699615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,7 @@\n   return withoutDup;\n }\n \n console.log(arraySemDuplicados(\"[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\"));\n+console.log(arraySemDuplicados(\"[1, 2, 3, 3, 3, 6, 7, 8, 9, 10]\"));\n+\n // Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733126755915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,8 @@\n   let withoutDup = [...new Set(array)];\n   return withoutDup;\n }\n \n-console.log(arraySemDuplicados(\"[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\"));\n-console.log(arraySemDuplicados(\"[1, 2, 3, 3, 3, 6, 7, 8, 9, 10]\"));\n+console.log(arraySemDuplicados([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));\n+console.log(arraySemDuplicados([1, 2, 3, 3, 3, 6, 7, 8, 9, 10]));\n \n // Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733126779724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n   return withoutDup;\n }\n \n console.log(arraySemDuplicados([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));\n-console.log(arraySemDuplicados([1, 2, 3, 3, 3, 6, 7, 8, 9, 10]));\n+console.log(arraySemDuplicados([1, 2, 3, 3, 3, 4, 5, 6, 7, 8, 9, 10]));\n \n\\ No newline at end of file\n-// Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n+// Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n"
+                },
+                {
+                    "date": 1733126808956,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,5 @@\n \n console.log(arraySemDuplicados([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));\n console.log(arraySemDuplicados([1, 2, 3, 3, 3, 4, 5, 6, 7, 8, 9, 10]));\n \n-// Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n\\ No newline at end of file\n+// Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n"
+                },
+                {
+                    "date": 1733128117725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n-function arraySemDuplicados(array) {\n+function arrayWithoutDuplicates(array) {\n   let withoutDup = [...new Set(array)];\n   return withoutDup;\n }\n \n-console.log(arraySemDuplicados([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));\n-console.log(arraySemDuplicados([1, 2, 3, 3, 3, 4, 5, 6, 7, 8, 9, 10]));\n+console.log(arrayWithoutDuplicates([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));\n+console.log(arrayWithoutDuplicates([1, 2, 3, 3, 3, 4, 5, 6, 7, 8, 9, 10]));\n \n // Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n"
+                }
+            ],
+            "date": 1733126589665,
+            "name": "Commit-0",
+            "content": "function arraySemDuplicados(array) {\n  let withoutDup = [...new Set(array)];\n  return withoutDup;\n}\n\nconsole.log(arraySemDuplicados(\"[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\"));\n"
+        }
+    ]
+}

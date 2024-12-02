@@ -1,0 +1,54 @@
+{
+    "sourceFile": "Javascript/Strings/stringConcatenation.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1733080938922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733080979048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,12 +7,13 @@\n let d = a.concat(\" \", b);\r\n \r\n // Using template literals\r\n let c = `${a} ${b}`;\r\n+let e = `${a} ${b}`;\r\n \r\n console.log(c);\r\n-//OR\r\n console.log(d);\r\n+console.log(e);\r\n \r\n //Output: Olá Mundo\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1733080997476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,20 +1,17 @@\n //<---String Concatenation--->\r\n \r\n-let a = \"Olá\"\r\n-let b = \"Mundo\"\r\n+let a = \"Olá\";\r\n+let b = \"Mundo\";\r\n \r\n // Using the concat() method\r\n let d = a.concat(\" \", b);\r\n \r\n // Using template literals\r\n let c = `${a} ${b}`;\r\n-let e = `${a} ${b}`;\r\n+let e = \"Olá\" + \" Mundo\";\r\n \r\n console.log(c);\r\n console.log(d);\r\n console.log(e);\r\n \r\n //Output: Olá Mundo\r\n-\r\n-\r\n-\r\n"
+                },
+                {
+                    "date": 1733081017364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,10 @@\n let d = a.concat(\" \", b);\r\n \r\n // Using template literals\r\n let c = `${a} ${b}`;\r\n+\r\n+// Using the + operator\r\n let e = \"Olá\" + \" Mundo\";\r\n \r\n console.log(c);\r\n console.log(d);\r\n"
+                },
+                {
+                    "date": 1733081029868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,12 +3,12 @@\n let a = \"Olá\";\r\n let b = \"Mundo\";\r\n \r\n // Using the concat() method\r\n-let d = a.concat(\" \", b);\r\n+let c = a.concat(\" \", b);\r\n \r\n // Using template literals\r\n-let c = `${a} ${b}`;\r\n+let d = `${a} ${b}`;\r\n \r\n // Using the + operator\r\n let e = \"Olá\" + \" Mundo\";\r\n \r\n"
+                },
+                {
+                    "date": 1733081097470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n // Using template literals\r\n let d = `${a} ${b}`;\r\n \r\n // Using the + operator\r\n-let e = \"Olá\" + \" Mundo\";\r\n+let e = \"Olá\" + \"\\n Mundo\";\r\n \r\n console.log(c);\r\n console.log(d);\r\n console.log(e);\r\n"
+                },
+                {
+                    "date": 1733081106361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n // Using template literals\r\n let d = `${a} ${b}`;\r\n \r\n // Using the + operator\r\n-let e = \"Olá\" + \"\\n Mundo\";\r\n+let e = \"Olá\" + \" Mundo\";\r\n \r\n console.log(c);\r\n console.log(d);\r\n console.log(e);\r\n"
+                },
+                {
+                    "date": 1733081126550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n let d = `${a} ${b}`;\r\n \r\n // Using the + operator\r\n let e = \"Olá\" + \" Mundo\";\r\n+let e = \"Olá\" + \"\\n\" + \" Mundo\";\r\n \r\n console.log(c);\r\n console.log(d);\r\n console.log(e);\r\n"
+                },
+                {
+                    "date": 1733081135773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,11 +10,12 @@\n let d = `${a} ${b}`;\r\n \r\n // Using the + operator\r\n let e = \"Olá\" + \" Mundo\";\r\n-let e = \"Olá\" + \"\\n\" + \" Mundo\";\r\n+let f = \"Olá\" + \"\\n\" + \" Mundo\";\r\n \r\n console.log(c);\r\n console.log(d);\r\n console.log(e);\r\n+console.log(f);\r\n \r\n //Output: Olá Mundo\r\n"
+                },
+                {
+                    "date": 1733081142383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,10 @@\n let d = `${a} ${b}`;\r\n \r\n // Using the + operator\r\n let e = \"Olá\" + \" Mundo\";\r\n+\r\n+// Using the + operator with line breaks\r\n let f = \"Olá\" + \"\\n\" + \" Mundo\";\r\n \r\n console.log(c);\r\n console.log(d);\r\n"
+                }
+            ],
+            "date": 1733080938922,
+            "name": "Commit-0",
+            "content": "//<---String Concatenation--->\r\n\r\nlet a = \"Olá\"\r\nlet b = \"Mundo\"\r\n\r\n// Using the concat() method\r\nlet d = a.concat(\" \", b);\r\n\r\n// Using template literals\r\nlet c = `${a} ${b}`;\r\n\r\nconsole.log(c);\r\n//OR\r\nconsole.log(d);\r\n\r\n//Output: Olá Mundo\r\n\r\n\r\n\r\n"
+        }
+    ]
+}

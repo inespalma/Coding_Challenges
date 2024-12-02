@@ -1,0 +1,42 @@
+{
+    "sourceFile": "Javascript/Math/highestAbsoluteInArray.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1733127800406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733127873509,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n function highestAbsolute(a, b) {\n-  return Math.max(Math.abs(a), Math.abs(b));\n+    return Math.max(Math.abs(a), Math.abs(b));\n }\n \n-console.log(highestAbsolute(-5, 3)); // Output: 5 (because |-5| = 5 and |3| = 3)\n-console.log(highestAbsolute(4, -7)); // Output: 7 (because |4| = 4 and |-7| = 7)\n-console.log(highestAbsolute(-10, -8)); // Output: 10 (because |-10| = 10 and |-8| = 8)\n+Math.abs(-10);  // Returns 10 (absolute value of -10)\n+Math.max(1, 5, 3);  // Returns 5 (largest number from the given arguments)\n"
+                },
+                {
+                    "date": 1733127892196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n function highestAbsolute(a, b) {\n-    return Math.max(Math.abs(a), Math.abs(b));\n+  return Math.max(Math.abs(a), Math.abs(b));\n }\n \n-Math.abs(-10);  // Returns 10 (absolute value of -10)\n-Math.max(1, 5, 3);  // Returns 5 (largest number from the given arguments)\n+console.log(highestAbsoluteInArray([-5, 3, -8, 7])); // Output: 8\n"
+                },
+                {
+                    "date": 1733127911563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-function highestAbsolute(a, b) {\n+function highestAbsoluteInArray(a, b) {\n   return Math.max(Math.abs(a), Math.abs(b));\n }\n \n console.log(highestAbsoluteInArray([-5, 3, -8, 7])); // Output: 8\n"
+                },
+                {
+                    "date": 1733127932705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-function highestAbsoluteInArray(a, b) {\n-  return Math.max(Math.abs(a), Math.abs(b));\n+function highestAbsoluteInArray(arr) {\n+  return Math.max(...arr.map(Math.abs)); // Use map to apply Math.abs to each element\n }\n \n console.log(highestAbsoluteInArray([-5, 3, -8, 7])); // Output: 8\n"
+                },
+                {
+                    "date": 1733127943085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n function highestAbsoluteInArray(arr) {\n-  return Math.max(...arr.map(Math.abs)); // Use map to apply Math.abs to each element\n+  return Math.max(...arr.map(Math.abs)); \n }\n \n console.log(highestAbsoluteInArray([-5, 3, -8, 7])); // Output: 8\n"
+                },
+                {
+                    "date": 1733127956097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n function highestAbsoluteInArray(arr) {\n-  return Math.max(...arr.map(Math.abs)); \n+  return Math.max(...arr.map(Math.abs));\n }\n \n-console.log(highestAbsoluteInArray([-5, 3, -8, 7])); // Output: 8\n+console.log(highestAbsoluteInArray([-5, -30, -8, 7])); // Output: 8\n"
+                }
+            ],
+            "date": 1733127800406,
+            "name": "Commit-0",
+            "content": "function highestAbsolute(a, b) {\n  return Math.max(Math.abs(a), Math.abs(b));\n}\n\nconsole.log(highestAbsolute(-5, 3)); // Output: 5 (because |-5| = 5 and |3| = 3)\nconsole.log(highestAbsolute(4, -7)); // Output: 7 (because |4| = 4 and |-7| = 7)\nconsole.log(highestAbsolute(-10, -8)); // Output: 10 (because |-10| = 10 and |-8| = 8)\n"
+        }
+    ]
+}

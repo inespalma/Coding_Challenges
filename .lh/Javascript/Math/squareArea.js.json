@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Javascript/Math/squareArea.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1733002027723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733002040080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,5 @@\n     let area = side * side;\n     return area;\n   }\n   \n-  console.log(squareArea(2)); // Expected output: 4\n-  \n\\ No newline at end of file\n+  console.log(squareArea(2));   \n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1733002027723,
+            "name": "Commit-0",
+            "content": "// Function to calculate the area of a square\nfunction squareArea(side) {\n    let area = side * side;\n    return area;\n  }\n  \n  console.log(squareArea(2)); // Expected output: 4\n  "
+        }
+    ]
+}

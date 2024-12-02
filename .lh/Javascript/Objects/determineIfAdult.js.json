@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Javascript/Objects/determineIfAdult.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1733099379663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1733099379663,
+            "name": "Commit-0",
+            "content": "function determineIfAdult(person) {\n  if (person.age !== undefined) {\n    person.isAdult = person.age >= 18;\n  } else {\n    person.isAdult = false;\n  }\n  return person;\n}\n\nconsole.log(determineIfAdult({ age: 18 }));\nconsole.log(determineIfAdult({ age: 17 }));\n"
+        }
+    ]
+}

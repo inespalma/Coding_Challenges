@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Javascript/Arrays/lowestValueInArray.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1733127320815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1733127320815,
+            "name": "Commit-0",
+            "content": "function lowestValueInArray(array) {\n    let minValue = Math.min(...array);\n    return minValue;\n}\n\nconsole.log(lowestValueInArray([1, 2, 3, 4, 5]));  "
+        }
+    ]
+}

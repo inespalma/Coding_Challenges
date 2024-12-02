@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Javascript/Math/Areas/squareParallelepipedSurfaceArea.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1733127053220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733127067779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-function superficieDoParalelepipedoQuadrado(ladodabase, comprimento) {\n-  let paraleQuadrado = 2 * (ladodabase ** 2 + 2 * ladodabase * comprimento);\n-  return paraleQuadrado;\n+function squareParallelepipedSurfaceArea(baseSide, length) {\n+  let surfaceArea = 2 * (baseSide ** 2 + 2 * baseSide * length);\n+  return surfaceArea;\n }\n \n-console.log(superficieDoParalelepipedoQuadrado(5, 10));\n+console.log(squareParallelepipedSurfaceArea)\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1733127053220,
+            "name": "Commit-0",
+            "content": "function superficieDoParalelepipedoQuadrado(ladodabase, comprimento) {\n  let paraleQuadrado = 2 * (ladodabase ** 2 + 2 * ladodabase * comprimento);\n  return paraleQuadrado;\n}\n\nconsole.log(superficieDoParalelepipedoQuadrado(5, 10));\n"
+        }
+    ]
+}

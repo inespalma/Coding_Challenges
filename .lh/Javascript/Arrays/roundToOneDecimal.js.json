@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Javascript/Arrays/roundToOneDecimal.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1733127467695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733128049148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n function roundToOneDecimal(d) {\n   return Math.round(d * 10) / 10;\n }\n \n-console.log(roundToOneDecimal(3.14159));\n\\ No newline at end of file\n+console.log(roundToOneDecimal(3.14));\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1733127467695,
+            "name": "Commit-0",
+            "content": "function roundToOneDecimal(d) {\n  return Math.round(d * 10) / 10;\n}\n\nconsole.log(roundToOneDecimal(3.14159));"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Javascript/Math/Areas/coneSurfaceArea.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1733126958212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1733126958212,
+            "name": "Commit-0",
+            "content": "function coneSurfaceArea(radius, height) {\n  let slantHeight = Math.sqrt(radius ** 2 + height ** 2);\n  let totalArea = Math.PI * radius * (radius + slantHeight);\n  return totalArea;\n}\n\nconsole.log(coneSurfaceArea(2, 6));\n"
+        }
+    ]
+}

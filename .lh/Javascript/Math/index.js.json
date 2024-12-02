@@ -1,0 +1,146 @@
+{
+    "sourceFile": "Javascript/Math/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 32,
+            "patches": [
+                {
+                    "date": 1733083294306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733083477058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,11 @@\n function contaParesEntreDoisValores(valor1, valor2) {\n-let pares = 0;\n-let i = valor1;}\n+    let pares = 0;\n+    let i = valor 1;\n+\n+    for (i = 0; i < valor2; i++){\n+        console.log(\"oi\")\n+    }\n+\n+}\n+\n+console.log(contaParesEntreDoisValores(1, 10));\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733083567667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,12 @@\n function contaParesEntreDoisValores(valor1, valor2) {\n-    let pares = 0;\n-    let i = valor 1;\n+  let pares = 0;\n+  let i = valor1;\n \n-    for (i = 0; i < valor2; i++){\n-        console.log(\"oi\")\n+  for (i = 0; i < valor2; i++) {\n+    if (i % 2 === 0) {\n+      pares++;\n\\ No newline at end of file\n     }\n-\n+  }\n }\n \n-console.log(contaParesEntreDoisValores(1, 10));\n+console.log(contaParesEntreDoisValores(1, 10));\n"
+                },
+                {
+                    "date": 1733083579941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,8 @@\n     if (i % 2 === 0) {\n       pares++;\n     }\n   }\n+  return pares;\n }\n \n\\ No newline at end of file\n-console.log(contaParesEntreDoisValores(1, 10));\n+console.log(contaParesEntreDoisValores(1, 10));\n"
+                },
+                {
+                    "date": 1733083714812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n function contaParesEntreDoisValores(valor1, valor2) {\n   let pares = 0;\n   let i = valor1;\n \n-  for (i = 0; i < valor2; i++) {\n+  for (i = valor1; i < valor2; i++) {\n     if (i % 2 === 0) {\n       pares++;\n     }\n   }\n   return pares;\n }\n \n\\ No newline at end of file\n-console.log(contaParesEntreDoisValores(1, 10));\n+console.log(contaParesEntreDoisValores(1, 10));\n"
+                },
+                {
+                    "date": 1733083726050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n function contaParesEntreDoisValores(valor1, valor2) {\n   let pares = 0;\n-  let i = valor1;\n \n   for (i = valor1; i < valor2; i++) {\n     if (i % 2 === 0) {\n       pares++;\n@@ -9,5 +8,5 @@\n   }\n   return pares;\n }\n \n-console.log(contaParesEntreDoisValores(1, 10));\n\\ No newline at end of file\n+console.log(contaParesEntreDoisValores(1, 10));\n"
+                },
+                {
+                    "date": 1733083735988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n function contaParesEntreDoisValores(valor1, valor2) {\n   let pares = 0;\n \n-  for (i = valor1; i < valor2; i++) {\n+  for (i = valor1; i <= valor2; i++) {\n     if (i % 2 === 0) {\n       pares++;\n     }\n   }\n"
+                },
+                {
+                    "date": 1733083999530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,20 @@\n-function contaParesEntreDoisValores(valor1, valor2) {\n-  let pares = 0;\n+function countEvensBetweenTwoValues(value1, value2) {\n+  if (value1 === value2) {\n+    return \"Please enter two different values.\";\n+  }\n \n-  for (i = valor1; i <= valor2; i++) {\n+  let evens = 0;\n+\n+  if (value1 > value2) {\n+    [value1, value2] = [value2, value1];\n+  }\n+  for (let i = value1; i <= value2; i++) {\n     if (i % 2 === 0) {\n-      pares++;\n+      evens++;\n     }\n   }\n-  return pares;\n+\n+  return evens;\n }\n \n-console.log(contaParesEntreDoisValores(1, 10));\n+console.log(countEvensBetweenTwoValues(1, 10)); // Example usage\n"
+                },
+                {
+                    "date": 1733084145888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n \n   if (value1 > value2) {\n     [value1, value2] = [value2, value1];\n   }\n+\n   for (let i = value1; i <= value2; i++) {\n     if (i % 2 === 0) {\n       evens++;\n     }\n@@ -17,4 +18,7 @@\n   return evens;\n }\n \n console.log(countEvensBetweenTwoValues(1, 10)); // Example usage\n+console.log(countEvensBetweenTwoValues(5, 5)); // Example usage\n+console.log(countEvensBetweenTwoValues(2, 8)); // Example usage\n+console.log(countEvensBetweenTwoValues(10, 5)); // Example usage\n"
+                },
+                {
+                    "date": 1733084949324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,8 @@\n \n   return evens;\n }\n \n-console.log(countEvensBetweenTwoValues(1, 10)); // Example usage\n-console.log(countEvensBetweenTwoValues(5, 5)); // Example usage\n-console.log(countEvensBetweenTwoValues(2, 8)); // Example usage\n-console.log(countEvensBetweenTwoValues(10, 5)); // Example usage\n+console.log(countEvensBetweenTwoValues(1, 10));\n+console.log(countEvensBetweenTwoValues(5, 5));\n+console.log(countEvensBetweenTwoValues(2, 8));\n+console.log(countEvensBetweenTwoValues(10, 5));\n"
+                },
+                {
+                    "date": 1733085239559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,4 +21,5 @@\n console.log(countEvensBetweenTwoValues(1, 10));\n console.log(countEvensBetweenTwoValues(5, 5));\n console.log(countEvensBetweenTwoValues(2, 8));\n console.log(countEvensBetweenTwoValues(10, 5));\n+console.log(countEvensBetweenTwoValues(-5, 5));\n"
+                },
+                {
+                    "date": 1733085394376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   if (value1 > value2) {\n     [value1, value2] = [value2, value1];\n   }\n \n-  for (let i = value1; i <= value2; i++) {\n+  for (let i =  Math.min(valor1,valor2); i <= Math.max(valor1,valor2); i++) {\n     if (i % 2 === 0) {\n       evens++;\n     }\n   }\n"
+                },
+                {
+                    "date": 1733085417235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,13 +4,13 @@\n   }\n \n   let evens = 0;\n \n-  if (value1 > value2) {\n-    [value1, value2] = [value2, value1];\n-  }\n+//   if (value1 > value2) {\n+//     [value1, value2] = [value2, value1];\n+//   }\n \n-  for (let i =  Math.min(valor1,valor2); i <= Math.max(valor1,valor2); i++) {\n+  for (let i = Math.min(valor1, valor2); i <= Math.max(valor1, valor2); i++) {\n     if (i % 2 === 0) {\n       evens++;\n     }\n   }\n"
+                },
+                {
+                    "date": 1733085440920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n //   if (value1 > value2) {\n //     [value1, value2] = [value2, value1];\n //   }\n \n-  for (let i = Math.min(valor1, valor2); i <= Math.max(valor1, valor2); i++) {\n+  for ( i = Math.min(valor1, valor2); i <= Math.max(valor1, valor2); i++) {\n     if (i % 2 === 0) {\n       evens++;\n     }\n   }\n"
+                },
+                {
+                    "date": 1733085473826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,13 +4,13 @@\n   }\n \n   let evens = 0;\n \n-//   if (value1 > value2) {\n-//     [value1, value2] = [value2, value1];\n-//   }\n+  if (value1 > value2) {\n+    [value1, value2] = [value2, value1];\n+  }\n \n-  for ( i = Math.min(valor1, valor2); i <= Math.max(valor1, valor2); i++) {\n+  for (let i =  Math.min(valor1,valor2); i <= Math.max(valor1,valor2); i++) {\n     if (i % 2 === 0) {\n       evens++;\n     }\n   }\n"
+                },
+                {
+                    "date": 1733085511783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   if (value1 > value2) {\n     [value1, value2] = [value2, value1];\n   }\n \n-  for (let i =  Math.min(valor1,valor2); i <= Math.max(valor1,valor2); i++) {\n+  for (let i = value1; i <= value2; i++) {\n     if (i % 2 === 0) {\n       evens++;\n     }\n   }\n@@ -22,4 +22,5 @@\n console.log(countEvensBetweenTwoValues(5, 5));\n console.log(countEvensBetweenTwoValues(2, 8));\n console.log(countEvensBetweenTwoValues(10, 5));\n console.log(countEvensBetweenTwoValues(-5, 5));\n+\n"
+                },
+                {
+                    "date": 1733085630669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,9 @@\n function countEvensBetweenTwoValues(value1, value2) {\n+  if (value1 <= 0 || value2 <= 0) {\n+    return \"Please enter values greater than 0.\";\n+  }\n+\n   if (value1 === value2) {\n     return \"Please enter two different values.\";\n   }\n \n@@ -22,5 +26,4 @@\n console.log(countEvensBetweenTwoValues(5, 5));\n console.log(countEvensBetweenTwoValues(2, 8));\n console.log(countEvensBetweenTwoValues(10, 5));\n console.log(countEvensBetweenTwoValues(-5, 5));\n-\n"
+                },
+                {
+                    "date": 1733085642200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,10 @@\n   }\n \n   let evens = 0;\n \n-  if (value1 > value2) {\n-    [value1, value2] = [value2, value1];\n-  }\n+  value1 = Math.min(value1, value2);\n+  value2 = Math.max(value1, value2);\n \n   for (let i = value1; i <= value2; i++) {\n     if (i % 2 === 0) {\n       evens++;\n"
+                },
+                {
+                    "date": 1733085741528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n function countEvensBetweenTwoValues(value1, value2) {\n-  if (value1 <= 0 || value2 <= 0) {\n+  if (value1 < 0 || value2 <= 0) {\n     return \"Please enter values greater than 0.\";\n   }\n \n   if (value1 === value2) {\n"
+                },
+                {
+                    "date": 1733085749429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n function countEvensBetweenTwoValues(value1, value2) {\n-  if (value1 < 0 || value2 <= 0) {\n+  if (value1 <= 0 || value2 <= 0) {\n     return \"Please enter values greater than 0.\";\n   }\n \n   if (value1 === value2) {\n"
+                },
+                {
+                    "date": 1733085945703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n   }\n \n   let evens = 0;\n \n-  value1 = Math.min(value1, value2);\n-  value2 = Math.max(value1, value2);\n+  minValue = Math.min(value1, value2);\n+  maxValue2 = Math.max(value1, value2);\n \n   for (let i = value1; i <= value2; i++) {\n     if (i % 2 === 0) {\n       evens++;\n"
+                },
+                {
+                    "date": 1733085955009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,11 +9,11 @@\n \n   let evens = 0;\n \n   minValue = Math.min(value1, value2);\n-  maxValue2 = Math.max(value1, value2);\n+  maxValue = Math.max(value1, value2);\n \n-  for (let i = value1; i <= value2; i++) {\n+  for (let i = minValue; i <= maxV; i++) {\n     if (i % 2 === 0) {\n       evens++;\n     }\n   }\n"
+                },
+                {
+                    "date": 1733086099627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \n   minValue = Math.min(value1, value2);\n   maxValue = Math.max(value1, value2);\n \n-  for (let i = minValue; i <= maxV; i++) {\n+  for (let i = Math.min(valor1,valor2); i <= Math.max(valor1,valor2); i++) {\n     if (i % 2 === 0) {\n       evens++;\n     }\n   }\n"
+                },
+                {
+                    "date": 1733086110283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \n   minValue = Math.min(value1, value2);\n   maxValue = Math.max(value1, value2);\n \n-  for (let i = Math.min(valor1,valor2); i <= Math.max(valor1,valor2); i++) {\n+  for (let i = Math.min(valor1); i <= Math.max(valor2); i++) {\n     if (i % 2 === 0) {\n       evens++;\n     }\n   }\n"
+                },
+                {
+                    "date": 1733086118760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \n   minValue = Math.min(value1, value2);\n   maxValue = Math.max(value1, value2);\n \n-  for (let i = Math.min(valor1); i <= Math.max(valor2); i++) {\n+  for (let i = Math.min(valor1,valor2); i <= Math.max(valor1,valor2); i++) {\n     if (i % 2 === 0) {\n       evens++;\n     }\n   }\n"
+                },
+                {
+                    "date": 1733086137028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \n   minValue = Math.min(value1, value2);\n   maxValue = Math.max(value1, value2);\n \n-  for (let i = Math.min(valor1,valor2); i <= Math.max(valor1,valor2); i++) {\n+  for (let i = Math.min(valor1,valor2); i <= maxValue; i++) {\n     if (i % 2 === 0) {\n       evens++;\n     }\n   }\n"
+                },
+                {
+                    "date": 1733086159946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \n   minValue = Math.min(value1, value2);\n   maxValue = Math.max(value1, value2);\n \n-  for (let i = Math.min(valor1,valor2); i <= maxValue; i++) {\n+  for (let i = minValue; i <= value2; i++) {\n     if (i % 2 === 0) {\n       evens++;\n     }\n   }\n"
+                },
+                {
+                    "date": 1733086165770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,12 +8,12 @@\n   }\n \n   let evens = 0;\n \n-  minValue = Math.min(value1, value2);\n-  maxValue = Math.max(value1, value2);\n+  value1 = Math.min(value1, value2);\n+  value2 = Math.max(value1, value2);\n \n-  for (let i = minValue; i <= value2; i++) {\n+  for (let i = value1; i <= value2; i++) {\n     if (i % 2 === 0) {\n       evens++;\n     }\n   }\n"
+                },
+                {
+                    "date": 1733086261533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,28 +1,33 @@\n-function countEvensBetweenTwoValues(value1, value2) {\n-  if (value1 <= 0 || value2 <= 0) {\n-    return \"Please enter values greater than 0.\";\n+function contaParesEntreDoisValores(valor1, valor2) {\n+  // Verificar se os valores são iguais\n+  if (valor1 === valor2) {\n+    return \"Por favor introduza dois valores diferentes.\";\n   }\n \n-  if (value1 === value2) {\n-    return \"Please enter two different values.\";\n+  // Verificar se algum dos valores é menor ou igual a 0\n+  if (valor1 <= 0 || valor2 <= 0) {\n+    return \"Por favor introduza valores maiores que 0.\";\n   }\n \n-  let evens = 0;\n+  let pares = 0;\n \n-  value1 = Math.min(value1, value2);\n-  value2 = Math.max(value1, value2);\n+  // Garantir que `valor1` seja o menor e `valor2` o maior\n+  let menor = Math.min(valor1, valor2);\n+  let maior = Math.max(valor1, valor2);\n \n-  for (let i = value1; i <= value2; i++) {\n+  // Contar os números pares entre `menor` e `maior`, inclusive\n+  for (let i = menor; i <= maior; i++) {\n     if (i % 2 === 0) {\n-      evens++;\n+      pares++;\n     }\n   }\n \n-  return evens;\n+  return pares;\n }\n \n-console.log(countEvensBetweenTwoValues(1, 10));\n-console.log(countEvensBetweenTwoValues(5, 5));\n-console.log(countEvensBetweenTwoValues(2, 8));\n-console.log(countEvensBetweenTwoValues(10, 5));\n-console.log(countEvensBetweenTwoValues(-5, 5));\n+// Exemplos de utilização\n+console.log(contaParesEntreDoisValores(1, 10)); // Deve retornar 5\n+console.log(contaParesEntreDoisValores(5, 5));  // Deve retornar \"Por favor introduza dois valores diferentes.\"\n+console.log(contaParesEntreDoisValores(2, 8));  // Deve retornar 4\n+console.log(contaParesEntreDoisValores(10, 5)); // Deve retornar 3\n+console.log(contaParesEntreDoisValores(-5, 5)); // Deve retornar \"Por favor introduza valores maiores que 0.\"\n"
+                },
+                {
+                    "date": 1733086270226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,8 @@\n }\n \n // Exemplos de utilização\n console.log(contaParesEntreDoisValores(1, 10)); // Deve retornar 5\n-console.log(contaParesEntreDoisValores(5, 5));  // Deve retornar \"Por favor introduza dois valores diferentes.\"\n-console.log(contaParesEntreDoisValores(2, 8));  // Deve retornar 4\n+console.log(contaParesEntreDoisValores(5, 5)); // Deve retornar \"Por favor introduza dois valores diferentes.\"\n+console.log(contaParesEntreDoisValores(2, 8)); // Deve retornar 4\n console.log(contaParesEntreDoisValores(10, 5)); // Deve retornar 3\n console.log(contaParesEntreDoisValores(-5, 5)); // Deve retornar \"Por favor introduza valores maiores que 0.\"\n"
+                },
+                {
+                    "date": 1733086284994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,22 +1,18 @@\n function contaParesEntreDoisValores(valor1, valor2) {\n-  // Verificar se os valores são iguais\n   if (valor1 === valor2) {\n     return \"Por favor introduza dois valores diferentes.\";\n   }\n \n-  // Verificar se algum dos valores é menor ou igual a 0\n   if (valor1 <= 0 || valor2 <= 0) {\n     return \"Por favor introduza valores maiores que 0.\";\n   }\n \n   let pares = 0;\n \n-  // Garantir que `valor1` seja o menor e `valor2` o maior\n   let menor = Math.min(valor1, valor2);\n   let maior = Math.max(valor1, valor2);\n \n-  // Contar os números pares entre `menor` e `maior`, inclusive\n   for (let i = menor; i <= maior; i++) {\n     if (i % 2 === 0) {\n       pares++;\n     }\n@@ -24,9 +20,8 @@\n \n   return pares;\n }\n \n-// Exemplos de utilização\n console.log(contaParesEntreDoisValores(1, 10)); // Deve retornar 5\n console.log(contaParesEntreDoisValores(5, 5)); // Deve retornar \"Por favor introduza dois valores diferentes.\"\n console.log(contaParesEntreDoisValores(2, 8)); // Deve retornar 4\n console.log(contaParesEntreDoisValores(10, 5)); // Deve retornar 3\n"
+                },
+                {
+                    "date": 1733086637213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,23 +2,17 @@\n   if (valor1 === valor2) {\n     return \"Por favor introduza dois valores diferentes.\";\n   }\n \n-  if (valor1 <= 0 || valor2 <= 0) {\n-    return \"Por favor introduza valores maiores que 0.\";\n-  }\n-\n   let pares = 0;\n-\n   let menor = Math.min(valor1, valor2);\n   let maior = Math.max(valor1, valor2);\n \n   for (let i = menor; i <= maior; i++) {\n     if (i % 2 === 0) {\n       pares++;\n     }\n   }\n-\n   return pares;\n }\n \n console.log(contaParesEntreDoisValores(1, 10)); // Deve retornar 5\n"
+                },
+                {
+                    "date": 1733086659303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n   }\n   return pares;\n }\n \n-console.log(contaParesEntreDoisValores(1, 10)); // Deve retornar 5\n-console.log(contaParesEntreDoisValores(5, 5)); // Deve retornar \"Por favor introduza dois valores diferentes.\"\n-console.log(contaParesEntreDoisValores(2, 8)); // Deve retornar 4\n-console.log(contaParesEntreDoisValores(10, 5)); // Deve retornar 3\n-console.log(contaParesEntreDoisValores(-5, 5)); // Deve retornar \"Por favor introduza valores maiores que 0.\"\n+console.log(contaParesEntreDoisValores(1, 10));\n+console.log(contaParesEntreDoisValores(5, 5));\n+console.log(contaParesEntreDoisValores(2, 8));\n+console.log(contaParesEntreDoisValores(10, 5));\n+console.log(contaParesEntreDoisValores(-5, 5));\n"
+                }
+            ],
+            "date": 1733083294306,
+            "name": "Commit-0",
+            "content": "function contaParesEntreDoisValores(valor1, valor2) {\nlet pares = 0;\nlet i = valor1;}\n"
+        }
+    ]
+}

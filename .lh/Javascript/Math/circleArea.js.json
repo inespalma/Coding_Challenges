@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Javascript/Math/circleArea.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1733002467627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733002476766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,4 +2,6 @@\n \n function circleArea(radius) {\n   return Math.PI * radius ** 2;\n }\n+\n+console.log(circleArea(5));\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1733002467627,
+            "name": "Commit-0",
+            "content": "// Function to calculate the area of a circle\n\nfunction circleArea(radius) {\n  return Math.PI * radius ** 2;\n}\n"
+        }
+    ]
+}

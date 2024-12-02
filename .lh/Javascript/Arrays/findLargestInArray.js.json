@@ -1,0 +1,26 @@
+{
+    "sourceFile": "Javascript/Arrays/findLargestInArray.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1733001525525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733001549391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,4 +6,6 @@\n     }\n   }\n   return largestValue;\n }\n+\n+console.log(findLargestInArray([4, 1, 4, 5]));\n"
+                },
+                {
+                    "date": 1733001556568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,5 +7,5 @@\n   }\n   return largestValue;\n }\n \n-console.log(findLargestInArray([4, 1, 4, 5]));\n+console.log(findLargestInArray([4, 1, 8, 5]));\n"
+                }
+            ],
+            "date": 1733001525525,
+            "name": "Commit-0",
+            "content": "function findLargestInArray(array) {\n  let largestValue = array[0];\n  for (let i = 0; i < array.length; i++) {\n    if (array[i] > largestValue) {\n      largestValue = array[i];\n    }\n  }\n  return largestValue;\n}\n"
+        }
+    ]
+}

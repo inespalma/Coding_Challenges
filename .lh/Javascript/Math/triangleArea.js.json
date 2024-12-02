@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Javascript/Math/triangleArea.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1733001360123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1733001360123,
+            "name": "Commit-0",
+            "content": "//Function that given a base returns the area of a triangle\r\nconst TRIANGLE_HEIGHT = 10;\r\nlet triangleArea;\r\n\r\nfunction calculateTriangleArea(base) {\r\n  triangleArea = (base * TRIANGLE_HEIGHT) / 2;\r\n  return triangleArea;\r\n}\r\n\r\nconsole.log(calculateTriangleArea(5));\r\n"
+        }
+    ]
+}

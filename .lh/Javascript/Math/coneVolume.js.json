@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Javascript/Math/coneVolume.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1733002595935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733002670771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,4 +2,6 @@\n \n function coneVolume(radius, height) {\n   return (Math.PI * radius ** 2 * height) / 3;\n }\n+\n+console.log(coneVolume(3, 5));\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1733002595935,
+            "name": "Commit-0",
+            "content": "// Function to calculate the volume of a cone\n\nfunction coneVolume(radius, height) {\n  return (Math.PI * radius ** 2 * height) / 3;\n}\n"
+        }
+    ]
+}

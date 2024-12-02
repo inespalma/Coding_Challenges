@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Javascript/Math/Areas/cylinderSurfaceArea.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1733126903469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733126911055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n function cylinderSurfaceArea(radius, height) {\n-    let cylinderArea = 2 * Math.PI * radius ** 2 + 2 * Math.PI * radius * height;\n-    return cylinderArea;\n+  let cylinderArea = 2 * Math.PI * radius ** 2 + 2 * Math.PI * radius * height;\n+  return cylinderArea;\n }\n\\ No newline at end of file\n \n-console.log(cylinderSurfaceArea(5, 10));\n+console.log(cylinderSurfaceArea(5, 10));\n"
+                }
+            ],
+            "date": 1733126903469,
+            "name": "Commit-0",
+            "content": "function cylinderSurfaceArea(radius, height) {\n    let cylinderArea = 2 * Math.PI * radius ** 2 + 2 * Math.PI * radius * height;\n    return cylinderArea;\n}\n\nconsole.log(cylinderSurfaceArea(5, 10));"
+        }
+    ]
+}

@@ -1,3 +1,5 @@
+// Function that given a base returns the area of a triangle
+
 const TRIANGLE_HEIGHT = 10;
 let triangleArea;
 

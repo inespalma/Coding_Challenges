@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Javascript/Math/hexagonArea.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1733068734857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733068745084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,4 +2,6 @@\n   let squareRoot = Math.sqrt(3);\n   let calc = ((3 * squareRoot) / 2) * Math.pow(side, 2);\n   return Math.floor(calc);\n }\n+\n+console.log(hexagonArea(10));\n"
+                }
+            ],
+            "date": 1733068734857,
+            "name": "Commit-0",
+            "content": "function hexagonArea(side) {\n  let squareRoot = Math.sqrt(3);\n  let calc = ((3 * squareRoot) / 2) * Math.pow(side, 2);\n  return Math.floor(calc);\n}\n"
+        }
+    ]
+}

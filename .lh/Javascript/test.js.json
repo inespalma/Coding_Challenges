@@ -1,0 +1,54 @@
+{
+    "sourceFile": "Javascript/test.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1733101469862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733101475401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,5 +21,6 @@\n         return \"dez para as cinco\"\n     }\n }\n \n-console.log(tempoEmPalavras(12, 30)); \n\\ No newline at end of file\n+console.log(tempoEmPalavras(12, 30)); \n+console.log(tempoEmPalavras(0, 30));\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733101495890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,7 +20,7 @@\n     if (minutos > 30) {\n         return \"dez para as cinco\"\n     }\n }\n-\n+console.log(hora)\n console.log(tempoEmPalavras(12, 30)); \n console.log(tempoEmPalavras(0, 30));\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733101511709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n function tempoEmPalavras(horas, minutos) {\n \n     const horasMap = new Map([\n-        [00, \"meia noite\"],\n+        [0, \"meia noite\"],\n         [12, \"meio dia\"],\n     ])\n \n     if (hora >= 0 && hora <= 23) {\n"
+                },
+                {
+                    "date": 1733101526382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,7 +20,7 @@\n     if (minutos > 30) {\n         return \"dez para as cinco\"\n     }\n }\n-console.log(hora)\n+console.log(horas)\n console.log(tempoEmPalavras(12, 30)); \n console.log(tempoEmPalavras(0, 30));\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733101553150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,7 +20,7 @@\n     if (minutos > 30) {\n         return \"dez para as cinco\"\n     }\n }\n-console.log(horas)\n+console.log(tempoEmPalavras(horas))\n console.log(tempoEmPalavras(12, 30)); \n console.log(tempoEmPalavras(0, 30));\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733101560425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,7 +20,7 @@\n     if (minutos > 30) {\n         return \"dez para as cinco\"\n     }\n }\n-console.log(tempoEmPalavras(horas))\n+// console.log(tempoEmPalavras(horas))\n console.log(tempoEmPalavras(12, 30)); \n console.log(tempoEmPalavras(0, 30));\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733101567694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,17 +10,17 @@\n     } else {\n         return \"Hora inválida\";\n     }\n \n-    if (minutos >= 0 && minutos <= 59) {\n-        return horasMap.get(minutos);\n-    } else {\n-        return \"Hora inválida\"\n-    }\n+    // if (minutos >= 0 && minutos <= 59) {\n+    //     return horasMap.get(minutos);\n+    // } else {\n+    //     return \"Hora inválida\"\n+    // }\n \n-    if (minutos > 30) {\n-        return \"dez para as cinco\"\n-    }\n+    // if (minutos > 30) {\n+    //     return \"dez para as cinco\"\n+    // }\n }\n // console.log(tempoEmPalavras(horas))\n console.log(tempoEmPalavras(12, 30)); \n console.log(tempoEmPalavras(0, 30));\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733101729706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,26 +1,105 @@\n-function tempoEmPalavras(horas, minutos) {\n+function tempoEmPalavras(h, m) {\n+  // Mapas de números por extenso para horas e minutos\n+  const horasPorExtenso = [\n+    \"meia noite\",\n+    \"uma\",\n+    \"duas\",\n+    \"três\",\n+    \"quatro\",\n+    \"cinco\",\n+    \"seis\",\n+    \"sete\",\n+    \"oito\",\n+    \"nove\",\n+    \"dez\",\n+    \"onze\",\n+    \"meio-dia\",\n+    \"uma\",\n+    \"duas\",\n+    \"três\",\n+    \"quatro\",\n+    \"cinco\",\n+    \"seis\",\n+    \"sete\",\n+    \"oito\",\n+    \"nove\",\n\\ No newline at end of file\n+    \"dez\",\n+    \"onze\",\n+  ];\n \n-    const horasMap = new Map([\n-        [0, \"meia noite\"],\n-        [12, \"meio dia\"],\n-    ])\n+  const minutosPorExtenso = [\n+    \"zero\",\n+    \"um\",\n+    \"dois\",\n+    \"três\",\n+    \"quatro\",\n+    \"cinco\",\n+    \"seis\",\n+    \"sete\",\n+    \"oito\",\n+    \"nove\",\n+    \"dez\",\n+    \"onze\",\n+    \"doze\",\n+    \"treze\",\n+    \"quatorze\",\n+    \"quinze\",\n+    \"dezesseis\",\n+    \"dezessete\",\n+    \"dezoito\",\n+    \"dezenove\",\n+    \"vinte\",\n+    \"vinte e um\",\n+    \"vinte e dois\",\n+    \"vinte e três\",\n+    \"vinte e quatro\",\n+    \"vinte e cinco\",\n+    \"vinte e seis\",\n+    \"vinte e sete\",\n+    \"vinte e oito\",\n+    \"vinte e nove\",\n+    \"meia\",\n+  ];\n \n-    if (hora >= 0 && hora <= 23) {\n-        return horasMap.get(horas);\n-    } else {\n-        return \"Hora inválida\";\n+  // Tratar os casos especiais de meia noite e meio-dia\n+  if (h === 0 && m === 0) {\n+    return \"meia noite em ponto\";\n+  }\n+  if (h === 12 && m === 0) {\n+    return \"meio dia em ponto\";\n+  }\n+\n+  // Se o minuto for zero, só dizemos a hora\n+  if (m === 0) {\n+    return `${horasPorExtenso[h]} em ponto`;\n+  }\n+\n+  // Se os minutos são menores ou iguais a 30, usamos \"past\"\n+  if (m <= 30) {\n+    if (m === 15) {\n+      return `um quarto após as ${horasPorExtenso[h]}`;\n     }\n+    if (m === 30) {\n+      return `meia após as ${horasPorExtenso[h]}`;\n+    }\n+    return `${minutosPorExtenso[m]} minutos após as ${horasPorExtenso[h]}`;\n+  }\n \n-    // if (minutos >= 0 && minutos <= 59) {\n-    //     return horasMap.get(minutos);\n-    // } else {\n-    //     return \"Hora inválida\"\n-    // }\n+  // Para os minutos maiores que 30, usamos \"para\"\n+  const novaHora = (h + 1) % 24; // A hora vai para o próximo número (ciclo 24 horas)\n+  const minutosPara = 60 - m;\n \n-    // if (minutos > 30) {\n-    //     return \"dez para as cinco\"\n-    // }\n+  if (minutosPara === 15) {\n+    return `um quarto para as ${horasPorExtenso[novaHora]}`;\n+  }\n+\n+  return `${minutosPorExtenso[minutosPara]} minutos para as ${horasPorExtenso[novaHora]}`;\n }\n-// console.log(tempoEmPalavras(horas))\n-console.log(tempoEmPalavras(12, 30)); \n-console.log(tempoEmPalavras(0, 30));\n+\n+// Exemplos de uso\n+console.log(tempoEmPalavras(10, 30)); // \"meia após as dez\"\n+console.log(tempoEmPalavras(5, 15)); // \"um quarto após as cinco\"\n+console.log(tempoEmPalavras(12, 0)); // \"meio dia em ponto\"\n+console.log(tempoEmPalavras(0, 0)); // \"meia noite em ponto\"\n+console.log(tempoEmPalavras(3, 45)); // \"um quarto para as quatro\"\n+console.log(tempoEmPalavras(2, 10)); // \"dez minutos após as duas\"\n"
+                },
+                {
+                    "date": 1733126412193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,11 +95,10 @@\n \n   return `${minutosPorExtenso[minutosPara]} minutos para as ${horasPorExtenso[novaHora]}`;\n }\n \n-// Exemplos de uso\n console.log(tempoEmPalavras(10, 30)); // \"meia após as dez\"\n console.log(tempoEmPalavras(5, 15)); // \"um quarto após as cinco\"\n console.log(tempoEmPalavras(12, 0)); // \"meio dia em ponto\"\n console.log(tempoEmPalavras(0, 0)); // \"meia noite em ponto\"\n console.log(tempoEmPalavras(3, 45)); // \"um quarto para as quatro\"\n-console.log(tempoEmPalavras(2, 10)); // \"dez minutos após as duas\"\n\\ No newline at end of file\n+console.log(tempoEmPalavras(2, 10)); // \"dez minutos após as duas\"\n"
+                }
+            ],
+            "date": 1733101469862,
+            "name": "Commit-0",
+            "content": "function tempoEmPalavras(horas, minutos) {\n\n    const horasMap = new Map([\n        [00, \"meia noite\"],\n        [12, \"meio dia\"],\n    ])\n\n    if (hora >= 0 && hora <= 23) {\n        return horasMap.get(horas);\n    } else {\n        return \"Hora inválida\";\n    }\n\n    if (minutos >= 0 && minutos <= 59) {\n        return horasMap.get(minutos);\n    } else {\n        return \"Hora inválida\"\n    }\n\n    if (minutos > 30) {\n        return \"dez para as cinco\"\n    }\n}\n\nconsole.log(tempoEmPalavras(12, 30)); "
+        }
+    ]
+}

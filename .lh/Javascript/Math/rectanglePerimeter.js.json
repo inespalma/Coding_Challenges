@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Javascript/Math/rectanglePerimeter.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1733002160645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1733002160645,
+            "name": "Commit-0",
+            "content": "// Function to calculate the perimeter of a rectangle\nfunction rectanglePerimeter(length, width) {\n  let num = 2 * (length + width);\n  return num;\n}\n\nconsole.log(rectanglePerimeter(4, 5));"
+        }
+    ]
+}

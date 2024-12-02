@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Javascript/Math/circlePerimeter.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1733002413594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1733002413594,
+            "name": "Commit-0",
+            "content": "// Function to calculate the perimeter (circumference) of a circle\nfunction circlePerimeter(radius) {\n  return 2 * Math.PI * radius;\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "sourceFile": "Javascript/Math/square.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 11,
+            "patches": [
+                {
+                    "date": 1733082881347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733082888327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,4 +5,6 @@\n     result *= n\n   }\n   return result;\n }\n+\n+console.log(somaQuadradosAteN(3));\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733082896877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n   }\n   return result;\n }\n \n-console.log(somaQuadradosAteN(3));\n\\ No newline at end of file\n+console.log(somaQuadradosAteN(30));\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733082937055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n function somaQuadradosAteN(n) {\n   let result = 0;\n \n   for (let i = 1; i <= n; i++) {\n-    result *= n\n+    result *= result + i;\n   }\n   return result;\n }\n \n\\ No newline at end of file\n-console.log(somaQuadradosAteN(30));\n+console.log(somaQuadradosAteN(30));\n"
+                },
+                {
+                    "date": 1733082945285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n function somaQuadradosAteN(n) {\n   let result = 0;\n \n   for (let i = 1; i <= n; i++) {\n-    result *= result + i;\n+    result *= result + i * i;\n   }\n   return result;\n }\n \n\\ No newline at end of file\n-console.log(somaQuadradosAteN(30));\n+console.log(somaQuadradosAteN(30));\n"
+                },
+                {
+                    "date": 1733082956055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   let result = 0;\n \n   for (let i = 1; i <= n; i++) {\n     result *= result + i * i;\n+    return result;\n   }\n-  return result;\n }\n \n\\ No newline at end of file\n-console.log(somaQuadradosAteN(30));\n+console.log(somaQuadradosAteN(30));\n"
+                },
+                {
+                    "date": 1733082962511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n function somaQuadradosAteN(n) {\n-  let result = 0;\n+  let result = 1;\n \n   for (let i = 1; i <= n; i++) {\n     result *= result + i * i;\n-    return result;\n   }\n+  return result;\n }\n\\ No newline at end of file\n \n-console.log(somaQuadradosAteN(30));\n+console.log(somaQuadradosAteN(30));\n"
+                },
+                {
+                    "date": 1733082977487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n   }\n   return result;\n }\n \n-console.log(somaQuadradosAteN(30));\n\\ No newline at end of file\n+console.log(somaQuadradosAteN(30));\n"
+                },
+                {
+                    "date": 1733083013823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n function somaQuadradosAteN(n) {\n   let result = 1;\n \n   for (let i = 1; i <= n; i++) {\n-    result *= result + i * i;\n+    result = result + i * i;\n   }\n   return result;\n }\n \n"
+                },
+                {
+                    "date": 1733083098089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n function somaQuadradosAteN(n) {\n-  let result = 1;\n+  let result = 0;\n \n   for (let i = 1; i <= n; i++) {\n     result = result + i * i;\n   }\n"
+                },
+                {
+                    "date": 1733083110384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n function somaQuadradosAteN(n) {\n   let result = 0;\n \n   for (let i = 1; i <= n; i++) {\n-    result = result + i * i;\n+    result += i * i;\n   }\n   return result;\n }\n \n"
+                },
+                {
+                    "date": 1733083208815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n-function somaQuadradosAteN(n) {\n-  let result = 0;\n+function sumOfSquaresUpToN(n) {\n+  let total = 0;\n \n   for (let i = 1; i <= n; i++) {\n-    result += i * i;\n+    total += i * i;\n   }\n-  return result;\n+\n+  return total;\n }\n \n-console.log(somaQuadradosAteN(30));\n+console.log(sumOfSquaresUpToN(30)); // Example usage\n"
+                }
+            ],
+            "date": 1733082881347,
+            "name": "Commit-0",
+            "content": "function somaQuadradosAteN(n) {\n  let result = 0;\n\n  for (let i = 1; i <= n; i++) {\n    result *= n\n  }\n  return result;\n}\n"
+        }
+    ]
+}

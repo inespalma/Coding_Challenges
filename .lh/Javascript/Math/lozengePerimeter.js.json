@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Javascript/Math/lozengePerimeter.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1733068583309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733068589868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,8 @@\n function lozengePerimeter(majorDiagonal, minorDiagonal) {\n-    let sideLength = Math.sqrt(Math.pow(majorDiagonal / 2, 2) + Math.pow(minorDiagonal / 2, 2));\n-    return 4 * sideLength;\n+  let sideLength = Math.sqrt(\n+    Math.pow(majorDiagonal / 2, 2) + Math.pow(minorDiagonal / 2, 2)\n+  );\n+  return 4 * sideLength;\n }\n+\n+console.log(lozengePerimeter(5, 3));\n"
+                }
+            ],
+            "date": 1733068583309,
+            "name": "Commit-0",
+            "content": "function lozengePerimeter(majorDiagonal, minorDiagonal) {\n    let sideLength = Math.sqrt(Math.pow(majorDiagonal / 2, 2) + Math.pow(minorDiagonal / 2, 2));\n    return 4 * sideLength;\n}\n"
+        }
+    ]
+}

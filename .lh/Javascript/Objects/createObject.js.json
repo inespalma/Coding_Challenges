@@ -1,0 +1,30 @@
+{
+    "sourceFile": "Javascript/Objects/createObject.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1733098232536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733098254425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,4 +3,6 @@\n   nome: \"Alfredo\",\n   altura: 1.78,\n   idade: idade,\n };\n+\n+console.log(pessoa);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733098949325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,5 @@\n   altura: 1.78,\n   idade: idade,\n };\n \n-console.log(pessoa);\n\\ No newline at end of file\n+console.log(pessoa.idade);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733099993579,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n-const idade = 26;\n-const pessoa = {\n-  nome: \"Alfredo\",\n-  altura: 1.78,\n-  idade: idade,\n+const age = 26;\n+const person = {\n+  name: \"Alfredo\",\n\\ No newline at end of file\n+  height: 1.78,\n+  age: age,\n };\n \n-console.log(pessoa.idade);\n+console.log(person.age);\n"
+                }
+            ],
+            "date": 1733098232536,
+            "name": "Commit-0",
+            "content": "const idade = 26;\nconst pessoa = {\n  nome: \"Alfredo\",\n  altura: 1.78,\n  idade: idade,\n};\n"
+        }
+    ]
+}

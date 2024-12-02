@@ -1,0 +1,30 @@
+{
+    "sourceFile": "Javascript/Objects/sda.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1733099149072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733099260725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,6 @@\n     }\n     return pessoa\n }\n \n-console.log(verificaIdade({}));\n\\ No newline at end of file\n+console.log(verificaIdade({ idade: 20 }));\n+console.log(verificaIdade({ idade: 17 }));\n"
+                },
+                {
+                    "date": 1733099270376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n     }\n     return pessoa\n }\n \n-console.log(verificaIdade({ idade: 20 }));\n+console.log(verificaIdade({ idade: 18 }));\n console.log(verificaIdade({ idade: 17 }));\n"
+                },
+                {
+                    "date": 1733099363477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n-function verificaIdade(pessoa) {\n-    if (pessoa.idade !== undefined) {\n-        pessoa.maiorDeIdade = pessoa.idade >= 18;\n-    } else {\n-        pessoa.maiorDeIdade = false;\n-    }\n-    return pessoa\n+function determineIfAdult(person) {\n+  if (person.age !== undefined) {\n+    person.isAdult = person.age >= 18;\n+  } else {\n+    person.isAdult = false;\n+  }\n+  return person;\n }\n \n-console.log(verificaIdade({ idade: 18 }));\n-console.log(verificaIdade({ idade: 17 }));\n+console.log(determineIfAdult({ age: 18 }));\n+console.log(determineIfAdult({ age: 17 }));\n"
+                }
+            ],
+            "date": 1733099149072,
+            "name": "Commit-0",
+            "content": "function verificaIdade(pessoa) {\n    if (pessoa.idade !== undefined) {\n        pessoa.maiorDeIdade = pessoa.idade >= 18;\n    } else {\n        pessoa.maiorDeIdade = false;\n    }\n    return pessoa\n}\n\nconsole.log(verificaIdade({}));"
+        }
+    ]
+}

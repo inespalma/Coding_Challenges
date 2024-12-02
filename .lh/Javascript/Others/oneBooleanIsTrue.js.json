@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Javascript/Others/oneBooleanIsTrue.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1733000097123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1733000097123,
+            "name": "Commit-0",
+            "content": "// Function to check if ONLY one of the booleans is true\r\nfunction oneInArrayIsTrue(...booleans) {\r\n  return booleans.filter(Boolean).length === 1;\r\n}\r\n\r\nconsole.log(oneInArrayIsTrue(false, false, false)); // false\r\nconsole.log(oneInArrayIsTrue(true, true, true)); // false\r\nconsole.log(oneInArrayIsTrue(true, false, true)); // false\r\nconsole.log(oneInArrayIsTrue(false, false, true)); // true\r\n\r\nconsole.log(oneInArrayIsTrue(false, true, false, false)); // true\r\nconsole.log(oneInArrayIsTrue(true, false, false, false)); // true\r\nconsole.log(oneInArrayIsTrue(true, true, false, false)); // false\r\nconsole.log(oneInArrayIsTrue(true, false, false, false, true)); // false\r\n"
+        }
+    ]
+}

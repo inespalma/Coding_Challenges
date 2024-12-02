@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Javascript/Math/rectangularPrismVolume.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1733002319627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733002353252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n // Function to calculate the volume of a rectangular prism\n function rectangularPrismVolume(length, width, height) {\n   return length * width * height;\n }\n+\n+console.log(rectangularPrismVolume(4, 5, 6));\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1733002319627,
+            "name": "Commit-0",
+            "content": "// Function to calculate the volume of a rectangular prism\nfunction rectangularPrismVolume(length, width, height) {\n  return length * width * height;\n}\n"
+        }
+    ]
+}

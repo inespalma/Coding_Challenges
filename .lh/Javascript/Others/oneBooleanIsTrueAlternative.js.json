@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Javascript/Others/oneBooleanIsTrueAlternative.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1732999895715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1732999895715,
+            "name": "Commit-0",
+            "content": "//Returns true if ONLY one of them is true (2 arguments)\r\nfunction oneBooleanIsTrue(boolean1, boolean2) {\r\n  return (boolean1 && !boolean2) || (!boolean1 && boolean2);\r\n}\r\n\r\nconsole.log(oneBooleanIsTrue(false, false)); //false\r\nconsole.log(oneBooleanIsTrue(true, true)); //false\r\nconsole.log(oneBooleanIsTrue(false, true)); //true\r\nconsole.log(oneBooleanIsTrue(true, false)); //true\r\n"
+        }
+    ]
+}
