@@ -1,0 +1,18 @@
+{
+    "sourceFile": "convertMonthOfTheYear.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1733178853591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1733178853591,
+            "name": "Commit-0",
+            "content": "function convertMonthOfTheYear(month) {\n  let months = new Map([\n    [1, \"January\"],\n    [2, \"February\"],\n    [3, \"March\"],\n    [4, \"April\"],\n    [5, \"May\"],\n    [6, \"June\"],\n    [7, \"July\"],\n    [8, \"August\"],\n    [9, \"September\"],\n    [10, \"October\"],\n    [11, \"November\"],\n    [12, \"December\"],\n  ]);\n\n  if (month < 1 || month > 12) return \"Please enter a number between 1 and 12.\";\n  return months.get(month);\n}\n\nconsole.log(monthsOfTheYear(12)); // Output: \"December\"\n"
+        }
+    ]
+}

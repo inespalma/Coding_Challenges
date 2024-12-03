@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Javascript/Others/convertTimeToWords.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1733175132728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733261959182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n function convertTimeToWords(hours, minutes) {\n-\n   const hoursWords = new Map([\n     [0, \"midnight\"],\n     [1, \"one\"],\n     [2, \"two\"],\n"
+                }
+            ],
+            "date": 1733175132728,
+            "name": "Commit-0",
+            "content": "function convertTimeToWords(hours, minutes) {\n\n  const hoursWords = new Map([\n    [0, \"midnight\"],\n    [1, \"one\"],\n    [2, \"two\"],\n    [3, \"three\"],\n    [4, \"four\"],\n    [5, \"five\"],\n    [6, \"six\"],\n    [7, \"seven\"],\n    [8, \"eight\"],\n    [9, \"nine\"],\n    [10, \"ten\"],\n    [11, \"eleven\"],\n    [12, \"noon\"],\n    [13, \"one\"],\n    [14, \"two\"],\n    [15, \"three\"],\n    [16, \"four\"],\n    [17, \"five\"],\n    [18, \"six\"],\n    [19, \"seven\"],\n    [20, \"eight\"],\n    [21, \"nine\"],\n    [22, \"ten\"],\n    [23, \"eleven\"],\n    [24, \"midnight\"],\n  ]);\n\n  const minutesWords = new Map([\n    [0, \"zero\"],\n    [1, \"one\"],\n    [2, \"two\"],\n    [3, \"three\"],\n    [4, \"four\"],\n    [5, \"five\"],\n    [6, \"six\"],\n    [7, \"seven\"],\n    [8, \"eight\"],\n    [9, \"nine\"],\n    [10, \"ten\"],\n    [11, \"eleven\"],\n    [12, \"twelve\"],\n    [13, \"thirteen\"],\n    [14, \"fourteen\"],\n    [15, \"quarter\"],\n    [16, \"sixteen\"],\n    [17, \"seventeen\"],\n    [18, \"eighteen\"],\n    [19, \"nineteen\"],\n    [20, \"twenty\"],\n    [21, \"twenty-one\"],\n    [22, \"twenty-two\"],\n    [23, \"twenty-three\"],\n    [24, \"twenty-four\"],\n    [25, \"twenty-five\"],\n    [26, \"twenty-six\"],\n    [27, \"twenty-seven\"],\n    [28, \"twenty-eight\"],\n    [29, \"twenty-nine\"],\n    [30, \"half\"],\n    [31, \"twenty-nine\"],\n    [32, \"twenty-eight\"],\n    [33, \"twenty-seven\"],\n    [34, \"twenty-six\"],\n    [35, \"twenty-five\"],\n    [36, \"twenty-four\"],\n    [37, \"twenty-three\"],\n    [38, \"twenty-two\"],\n    [39, \"twenty-one\"],\n    [40, \"twenty\"],\n    [41, \"nineteen\"],\n    [42, \"eighteen\"],\n    [43, \"seventeen\"],\n    [44, \"sixteen\"],\n    [45, \"quarter\"],\n    [46, \"fourteen\"],\n    [47, \"thirteen\"],\n    [48, \"twelve\"],\n    [49, \"eleven\"],\n    [50, \"ten\"],\n    [51, \"nine\"],\n    [52, \"eight\"],\n    [53, \"seven\"],\n    [54, \"six\"],\n    [55, \"five\"],\n    [56, \"four\"],\n    [57, \"three\"],\n    [58, \"two\"],\n    [59, \"one\"],\n  ]);\n\n  if (minutes === 0) {\n    return `${hoursWords.get(hours)} o'clock`;\n  }\n  if (minutes <= 30) {\n    return `${hoursWords.get(hours)} and ${minutesWords.get(minutes)}`;\n  }\n  if (minutes > 30 && hours === 11) {\n    return `${minutesWords.get(minutes)} to noon`;\n  }\n  if (minutes > 30 && hours === 23) {\n    return `${minutesWords.get(minutes)} to midnight`;\n  }\n  if (minutes > 30) {\n    return `${minutesWords.get(minutes)} to ${hoursWords.get(hours + 1)}`;\n  }\n}\n\nconsole.log(convertTimeToWords(10, 30)); // \"ten and half\"\nconsole.log(convertTimeToWords(2, 5)); // \"two and five\"\nconsole.log(convertTimeToWords(4, 45)); // \"quarter to five\"\nconsole.log(convertTimeToWords(12, 0)); // \"noon o'clock\"\nconsole.log(convertTimeToWords(11, 50)); // \"ten to noon\"\nconsole.log(convertTimeToWords(14, 23)); // \"two and twenty-three\"\n"
+        }
+    ]
+}

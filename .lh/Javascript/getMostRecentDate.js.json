@@ -1,0 +1,78 @@
+{
+    "sourceFile": "Javascript/getMostRecentDate.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 15,
+            "patches": [
+                {
+                    "date": 1733259344480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733259447697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n-// function getMostRecentDate(date1, date2) {\n-//   return Date.parse(date1) > Date.parse(date2) ? date1 : date2;\n-// }\n+function getMostRecentDate(date1, date2) {\n+  return Date.parse(date1) > Date.parse(date2) ? date1 : date2;\n+}\n \n-// console.log(getMostRecentDate(\"2022-05-01\", \"2022-04-30\"));\n+console.log(getMostRecentDate(\"2022-05-01\", \"2022-04-30\"));\n+\n+//Spread Operator\n function getMostRecentDate(...dates) {\n   return dates.reduce((mostRecent, currentDate) =>\n     Date.parse(currentDate) > Date.parse(mostRecent) ? currentDate : mostRecent\n   );\n }\n \n-console.log(\n-  getMostRecentDate(\"2022-05-01\", \"2022-04-30\", \"2022-06-15\", \"2021-12-31\")\n-);\n+console.log(getMostRecentDate(\"2022-05-01\", \"2022-04-30\", \"2022-06-15\", \"2021-12-31\"));\n // Output: \"2022-06-15\"\n"
+                },
+                {
+                    "date": 1733259477102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,14 +2,17 @@\n   return Date.parse(date1) > Date.parse(date2) ? date1 : date2;\n }\n \n console.log(getMostRecentDate(\"2022-05-01\", \"2022-04-30\"));\n+// Output: \"2022-05-01\"\n \n //Spread Operator\n function getMostRecentDate(...dates) {\n   return dates.reduce((mostRecent, currentDate) =>\n     Date.parse(currentDate) > Date.parse(mostRecent) ? currentDate : mostRecent\n   );\n }\n \n-console.log(getMostRecentDate(\"2022-05-01\", \"2022-04-30\", \"2022-06-15\", \"2021-12-31\"));\n+console.log(\n+  getMostRecentDate(\"2022-05-01\", \"2022-04-30\", \"2022-06-15\", \"2021-12-31\")\n+);\n // Output: \"2022-06-15\"\n"
+                },
+                {
+                    "date": 1733259744449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,4 @@\n-function getMostRecentDate(date1, date2) {\n-  return Date.parse(date1) > Date.parse(date2) ? date1 : date2;\n-}\n-\n-console.log(getMostRecentDate(\"2022-05-01\", \"2022-04-30\"));\n-// Output: \"2022-05-01\"\n-\n //Spread Operator\n function getMostRecentDate(...dates) {\n   return dates.reduce((mostRecent, currentDate) =>\n     Date.parse(currentDate) > Date.parse(mostRecent) ? currentDate : mostRecent\n@@ -15,4 +8,11 @@\n console.log(\n   getMostRecentDate(\"2022-05-01\", \"2022-04-30\", \"2022-06-15\", \"2021-12-31\")\n );\n // Output: \"2022-06-15\"\n+\n+function getMostRecentDateAlternative(date1, date2) {\n+  return Date.parse(date1) > Date.parse(date2) ? date1 : date2;\n+}\n+\n+console.log(getMostRecentDateAlternative(\"2022-05-01\", \"2022-04-30\"));\n+// Output: \"2022-05-01\"\n"
+                },
+                {
+                    "date": 1733260072690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n     Date.parse(currentDate) > Date.parse(mostRecent) ? currentDate : mostRecent\n   );\n }\n \n+console.log(dates);\n console.log(\n   getMostRecentDate(\"2022-05-01\", \"2022-04-30\", \"2022-06-15\", \"2021-12-31\")\n );\n // Output: \"2022-06-15\"\n"
+                },
+                {
+                    "date": 1733260080131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n //Spread Operator\n function getMostRecentDate(...dates) {\n+  console.log(dates);\n   return dates.reduce((mostRecent, currentDate) =>\n     Date.parse(currentDate) > Date.parse(mostRecent) ? currentDate : mostRecent\n   );\n }\n \n-console.log(dates);\n console.log(\n   getMostRecentDate(\"2022-05-01\", \"2022-04-30\", \"2022-06-15\", \"2021-12-31\")\n );\n // Output: \"2022-06-15\"\n"
+                },
+                {
+                    "date": 1733260127220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n );\n // Output: \"2022-06-15\"\n \n function getMostRecentDateAlternative(date1, date2) {\n+  console.log(date);\n   return Date.parse(date1) > Date.parse(date2) ? date1 : date2;\n }\n \n console.log(getMostRecentDateAlternative(\"2022-05-01\", \"2022-04-30\"));\n"
+                },
+                {
+                    "date": 1733260141358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n );\n // Output: \"2022-06-15\"\n \n function getMostRecentDateAlternative(date1, date2) {\n-  console.log(date);\n+  console.log(date1);\n   return Date.parse(date1) > Date.parse(date2) ? date1 : date2;\n }\n \n console.log(getMostRecentDateAlternative(\"2022-05-01\", \"2022-04-30\"));\n"
+                },
+                {
+                    "date": 1733260149758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,8 @@\n );\n // Output: \"2022-06-15\"\n \n function getMostRecentDateAlternative(date1, date2) {\n-  console.log(date1);\n   return Date.parse(date1) > Date.parse(date2) ? date1 : date2;\n }\n \n console.log(getMostRecentDateAlternative(\"2022-05-01\", \"2022-04-30\"));\n"
+                },
+                {
+                    "date": 1733260220183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n //Spread Operator\n function getMostRecentDate(...dates) {\n-  console.log(dates);\n   return dates.reduce((mostRecent, currentDate) =>\n     Date.parse(currentDate) > Date.parse(mostRecent) ? currentDate : mostRecent\n   );\n }\n"
+                },
+                {
+                    "date": 1733260235575,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n //Spread Operator\n function getMostRecentDate(...dates) {\n+  // dates - [ '2022-05-01', '2022-04-30', '2022-06-15', '2021-12-31' ]\n   return dates.reduce((mostRecent, currentDate) =>\n     Date.parse(currentDate) > Date.parse(mostRecent) ? currentDate : mostRecent\n   );\n }\n"
+                },
+                {
+                    "date": 1733260243040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n //Spread Operator\n function getMostRecentDate(...dates) {\n-  // dates - [ '2022-05-01', '2022-04-30', '2022-06-15', '2021-12-31' ]\n+  // ...dates - [ '2022-05-01', '2022-04-30', '2022-06-15', '2021-12-31' ]\n   return dates.reduce((mostRecent, currentDate) =>\n     Date.parse(currentDate) > Date.parse(mostRecent) ? currentDate : mostRecent\n   );\n }\n"
+                },
+                {
+                    "date": 1733260358740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n );\n // Output: \"2022-06-15\"\n \n function getMostRecentDateAlternative(date1, date2) {\n+  console.log(Date.parse(date1));\n   return Date.parse(date1) > Date.parse(date2) ? date1 : date2;\n }\n \n console.log(getMostRecentDateAlternative(\"2022-05-01\", \"2022-04-30\"));\n"
+                },
+                {
+                    "date": 1733260375220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n // Output: \"2022-06-15\"\n \n function getMostRecentDateAlternative(date1, date2) {\n   console.log(Date.parse(date1));\n+  console.log(date2);\n   return Date.parse(date1) > Date.parse(date2) ? date1 : date2;\n }\n \n console.log(getMostRecentDateAlternative(\"2022-05-01\", \"2022-04-30\"));\n"
+                },
+                {
+                    "date": 1733260409557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,11 @@\n     Date.parse(currentDate) > Date.parse(mostRecent) ? currentDate : mostRecent\n   );\n }\n \n-console.log(\n-  getMostRecentDate(\"2022-05-01\", \"2022-04-30\", \"2022-06-15\", \"2021-12-31\")\n-);\n+// console.log(\n+//   getMostRecentDate(\"2022-05-01\", \"2022-04-30\", \"2022-06-15\", \"2021-12-31\")\n+// );\n // Output: \"2022-06-15\"\n \n function getMostRecentDateAlternative(date1, date2) {\n   console.log(Date.parse(date1));\n"
+                },
+                {
+                    "date": 1733260560247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,17 +5,8 @@\n     Date.parse(currentDate) > Date.parse(mostRecent) ? currentDate : mostRecent\n   );\n }\n \n-// console.log(\n-//   getMostRecentDate(\"2022-05-01\", \"2022-04-30\", \"2022-06-15\", \"2021-12-31\")\n-// );\n+console.log(\n+  getMostRecentDate(\"2022-05-01\", \"2022-04-30\", \"2022-06-15\", \"2021-12-31\")\n+);\n // Output: \"2022-06-15\"\n-\n-function getMostRecentDateAlternative(date1, date2) {\n-  console.log(Date.parse(date1));\n-  console.log(date2);\n-  return Date.parse(date1) > Date.parse(date2) ? date1 : date2;\n-}\n-\n-console.log(getMostRecentDateAlternative(\"2022-05-01\", \"2022-04-30\"));\n-// Output: \"2022-05-01\"\n"
+                }
+            ],
+            "date": 1733259344480,
+            "name": "Commit-0",
+            "content": "// function getMostRecentDate(date1, date2) {\n//   return Date.parse(date1) > Date.parse(date2) ? date1 : date2;\n// }\n\n// console.log(getMostRecentDate(\"2022-05-01\", \"2022-04-30\"));\nfunction getMostRecentDate(...dates) {\n  return dates.reduce((mostRecent, currentDate) =>\n    Date.parse(currentDate) > Date.parse(mostRecent) ? currentDate : mostRecent\n  );\n}\n\nconsole.log(\n  getMostRecentDate(\"2022-05-01\", \"2022-04-30\", \"2022-06-15\", \"2021-12-31\")\n);\n// Output: \"2022-06-15\"\n"
+        }
+    ]
+}

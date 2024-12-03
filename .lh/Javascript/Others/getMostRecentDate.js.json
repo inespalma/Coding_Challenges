@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Javascript/Others/getMostRecentDate.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1733179069544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1733179069544,
+            "name": "Commit-0",
+            "content": "function getMostRecentDate(date1, date2) {\n  return Date.parse(date1) > Date.parse(date2) ? date1 : date2;\n}\n\nconsole.log(getMostRecentDate(\"2022-05-01\", \"2022-04-30\"));\n"
+        }
+    ]
+}

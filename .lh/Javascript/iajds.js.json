@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Javascript/iajds.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1733163582555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733262059346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     const minutesText = minutesInWords.get(minutes) || `${minutes} minutes`;\n     return `${minutesText} past ${hoursInWords.get(hours)}`;\n   }\n \n-  const nextHour = (hours + 1) % 24;\n-  const minutesTo = 60 - minutes;\n-  const minutesText = minutesInWords.get(minutesTo) || `${minutesTo} minutes`;\n+  // const nextHour = (hours + 1) % 24;\n+  // const minutesTo = 60 - minutes;\n+  // const minutesText = minutesInWords.get(minutesTo) || `${minutesTo} minutes`;\n   return `${minutesText} to ${hoursInWords.get(nextHour)}`;\n }\n"
+                }
+            ],
+            "date": 1733163582555,
+            "name": "Commit-0",
+            "content": "function tempoEmPalavras(horas, minutos) {\n  const mapHORAS = new Map(\n    [0, \"meia noite\"],\n    [1, \"uma\"][(2, \"duas\")][(3, \"três\")][(4, \"quatro\")][(5, \"cinco\")][\n      (6, \"seis\")\n    ][(7, \"sete\")][(8, \"oito\")][(9, \"nove\")][(10, \"dez\")][(11, \"onze\")][\n      (12, \"meio dia\")\n    ]\n  );\n\n  const mapMINUTOS = new Map(\n    [0, \"em ponto\"],\n    [15, \"um quarto\"],\n    [30, \"meia\"],\n    [45, \"\"]\n  );\n\n  if (hours === 0 && minutes === 0) return \"midnight o'clock\";\n  if (hours === 12 && minutes === 0) return \"noon o'clock\";\n\n  if (minutes <= 30) {\n    const minutesText = minutesInWords.get(minutes) || `${minutes} minutes`;\n    return `${minutesText} past ${hoursInWords.get(hours)}`;\n  }\n\n  const nextHour = (hours + 1) % 24;\n  const minutesTo = 60 - minutes;\n  const minutesText = minutesInWords.get(minutesTo) || `${minutesTo} minutes`;\n  return `${minutesText} to ${hoursInWords.get(nextHour)}`;\n}\n"
+        }
+    ]
+}

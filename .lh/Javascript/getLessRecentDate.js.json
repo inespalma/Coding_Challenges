@@ -1,0 +1,30 @@
+{
+    "sourceFile": "Javascript/getLessRecentDate.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1733261371471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733261603787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n function oldestDate(dates) {\n-  // Convert dates to timestamps (milliseconds) using getTime(), and then find the smallest one\n+  // Convert dates to timestamps using .getTime() and find the smallest\n   let oldest = new Date(\n     Math.min(...dates.map((date) => new Date(date).getTime()))\n   );\n \n-  return oldest.toISOString().split(\"T\")[0]; // Format it to YYYY-MM-DD\n+  // Return the date in YYYY-MM-DD format\n+  return oldest.toISOString().split(\"T\")[0]; // This gives the date without the time part\n }\n \n-console.log(oldestDate([\"2022-05-01\", \"2022-04-30\", \"2021-12-31\"]));\n-// Output: \"2021-12-31\"\n+console.log(oldestDate([\"2022-05-01\", \"2022-04-30\", \"2021-12-31\"])); // Output: \"2021-12-31\"\n"
+                },
+                {
+                    "date": 1733261623720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n function oldestDate(dates) {\n-  // Convert dates to timestamps using .getTime() and find the smallest\n+  // Convert date to timestamp with .getTime()\n   let oldest = new Date(\n     Math.min(...dates.map((date) => new Date(date).getTime()))\n   );\n \n"
+                },
+                {
+                    "date": 1733261658288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-function oldestDate(dates) {\n+function getOldestDate(dates) {\n   // Convert date to timestamp with .getTime()\n   let oldest = new Date(\n     Math.min(...dates.map((date) => new Date(date).getTime()))\n   );\n@@ -7,5 +7,6 @@\n   // Return the date in YYYY-MM-DD format\n   return oldest.toISOString().split(\"T\")[0]; // This gives the date without the time part\n }\n \n-console.log(oldestDate([\"2022-05-01\", \"2022-04-30\", \"2021-12-31\"])); // Output: \"2021-12-31\"\n+console.log(getOldestDate([\"2022-05-01\", \"2022-04-30\", \"2021-12-31\"]));\n+// Output: \"2021-12-31\"\n"
+                }
+            ],
+            "date": 1733261371470,
+            "name": "Commit-0",
+            "content": "function oldestDate(dates) {\n  // Convert dates to timestamps (milliseconds) using getTime(), and then find the smallest one\n  let oldest = new Date(\n    Math.min(...dates.map((date) => new Date(date).getTime()))\n  );\n\n  return oldest.toISOString().split(\"T\")[0]; // Format it to YYYY-MM-DD\n}\n\nconsole.log(oldestDate([\"2022-05-01\", \"2022-04-30\", \"2021-12-31\"]));\n// Output: \"2021-12-31\"\n"
+        }
+    ]
+}

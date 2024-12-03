@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Javascript/Math/countHalvingsUntilLessThanTwo.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1733262280471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1733262280471,
+            "name": "Commit-0",
+            "content": "function countHalvingsUntilLessThanTwo(number) {\n  if (number <= 0) {\n    return \"Please enter a positive number.\";\n  }\n\n  let count;\n  for (count = 0; number >= 2; number = Math.floor(number / 2)) {\n    count++;\n  }\n  return count;\n}\n\nconsole.log(countHalvingsUntilLessThanTwo(10));\n// Output: 3 (10 → 5 → 2 → 1)\nconsole.log(countHalvingsUntilLessThanTwo(64));\n// Output: 6 (64 → 32 → 16 → 8 → 4 → 2 → 1)\nconsole.log(countHalvingsUntilLessThanTwo(1));\n// Output: 0 (1 is already less than 2)\nconsole.log(countHalvingsUntilLessThanTwo(-5));\n// Output: \"Please enter a positive number.\"\n"
+        }
+    ]
+}

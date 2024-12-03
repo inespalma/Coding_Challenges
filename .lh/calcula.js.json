@@ -1,0 +1,82 @@
+{
+    "sourceFile": "calcula.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 16,
+            "patches": [
+                {
+                    "date": 1733178176039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733178185043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,4 +21,6 @@\n     moda: moda,\n     count: maxCount,\n   };\n }\n+\n+console.log(calculaModa([1, 2, 8, 2, 5, 8]));\n"
+                },
+                {
+                    "date": 1733178326364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,26 +1,5 @@\n function calculaModa(array) {\n-  let count = {};\n-  let maxCount = 0;\n-  let moda = null;\n-\n-  for (let i = 0; i < array.length; i++) {\n-    const item = array[i];\n-    if (count[item]) {\n-      count[item]++;\n-    } else {\n-      count[item] = 1;\n-    }\n-\n-    if (count[item] > maxCount) {\n-      maxCount = count[item];\n-      moda = item;\n-    }\n-  }\n-\n-  return {\n-    moda: moda,\n-    count: maxCount,\n-  };\n+  return array\n+    .sort((a, b) => a - b)\n+    .filter((item, index) => array.indexOf(item) === index);\n }\n-\n-console.log(calculaModa([1, 2, 8, 2, 5, 8]));\n"
+                },
+                {
+                    "date": 1733178358359,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n function calculaModa(array) {\n-  return array\n-    .sort((a, b) => a - b)\n-    .filter((item, index) => array.indexOf(item) === index);\n+  return array.map((x) => array.filter((y) => y === x).length);\n }\n+\n+console.log(\n+  calculaModa([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])\n+);\n"
+                },
+                {
+                    "date": 1733178370762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n   return array.map((x) => array.filter((y) => y === x).length);\n }\n \n console.log(\n-  calculaModa([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])\n+  calculaModa([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 5])\n );\n"
+                },
+                {
+                    "date": 1733178390572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,5 @@\n function calculaModa(array) {\n   return array.map((x) => array.filter((y) => y === x).length);\n }\n \n-console.log(\n-  calculaModa([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 5])\n-);\n+console.log(calculaModa([1, 2, 3, 3, 4, 5]));\n"
+                },
+                {
+                    "date": 1733178446985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n function calculaModa(array) {\n-  return array.map((x) => array.filter((y) => y === x).length);\n+  return array.map((ele) => Math.max(...array)).indexOf(ele);\n }\n \n console.log(calculaModa([1, 2, 3, 3, 4, 5]));\n"
+                },
+                {
+                    "date": 1733178534904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,16 @@\n-function calculaModa(array) {\n-  return array.map((ele) => Math.max(...array)).indexOf(ele);\n+function mesesDoAno(mes) {\n+  let mes = new Map([\n+    [1, \"Janeiro\"],\n+    [2, \"Fevereiro\"],\n+    [3, \"Marco\"],\n+    [4, \"Abril\"],\n+    [5, \"Maio\"],\n+    [6, \"Junho\"],\n+    [7, \"Julho\"],\n+    [8, \"Agosto\"],\n+    [9, \"Setembro\"],\n+    [10, \"Outubro\"],\n+    [11, \"Novembro\"],\n+    [12, \"Dezembro\"],\n+  ]);\n }\n-\n-console.log(calculaModa([1, 2, 3, 3, 4, 5]));\n"
+                },
+                {
+                    "date": 1733178546633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,5 +12,7 @@\n     [10, \"Outubro\"],\n     [11, \"Novembro\"],\n     [12, \"Dezembro\"],\n   ]);\n+\n+  return mes.get(mes);\n }\n"
+                },
+                {
+                    "date": 1733178556206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,4 +15,6 @@\n   ]);\n \n   return mes.get(mes);\n }\n+\n+console.log(mesesDoAno(12));\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733178566855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n function mesesDoAno(mes) {\n-  let mes = new Map([\n+  let meses = new Map([\n     [1, \"Janeiro\"],\n     [2, \"Fevereiro\"],\n     [3, \"Marco\"],\n     [4, \"Abril\"],\n@@ -13,8 +13,8 @@\n     [11, \"Novembro\"],\n     [12, \"Dezembro\"],\n   ]);\n \n-  return mes.get(mes);\n+  return meses.get(mes);\n }\n \n\\ No newline at end of file\n-console.log(mesesDoAno(12));\n+console.log(mesesDoAno(12));\n"
+                },
+                {
+                    "date": 1733178676747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n     [11, \"Novembro\"],\n     [12, \"Dezembro\"],\n   ]);\n \n-  return meses.get(mes);\n+  if (mes < 1 && mes > 12) return meses.get(mes);\n }\n \n\\ No newline at end of file\n-console.log(mesesDoAno(12));\n+console.log(mesesDoAno(12));\n"
+                },
+                {
+                    "date": 1733178698068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n     [11, \"Novembro\"],\n     [12, \"Dezembro\"],\n   ]);\n \n-  if (mes < 1 && mes > 12) return meses.get(mes);\n+  if (mes < 1 && mes > 12) return \"Por favor insira um número entre 1 e 12.\";\n+  meses.get(mes);\n }\n\\ No newline at end of file\n \n-console.log(mesesDoAno(12));\n+console.log(mesesDoAno(12));\n"
+                },
+                {
+                    "date": 1733178704050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,8 @@\n     [12, \"Dezembro\"],\n   ]);\n \n   if (mes < 1 && mes > 12) return \"Por favor insira um número entre 1 e 12.\";\n-  meses.get(mes);\n+  return meses.get(mes);\n }\n \n\\ No newline at end of file\n-console.log(mesesDoAno(12));\n+console.log(mesesDoAno(12));\n"
+                },
+                {
+                    "date": 1733178776922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n function mesesDoAno(mes) {\n   let meses = new Map([\n     [1, \"Janeiro\"],\n     [2, \"Fevereiro\"],\n-    [3, \"Marco\"],\n+    [3, \"Março\"],\n     [4, \"Abril\"],\n     [5, \"Maio\"],\n     [6, \"Junho\"],\n     [7, \"Julho\"],\n@@ -13,9 +13,9 @@\n     [11, \"Novembro\"],\n     [12, \"Dezembro\"],\n   ]);\n \n-  if (mes < 1 && mes > 12) return \"Por favor insira um número entre 1 e 12.\";\n+  if (mes < 1 || mes > 12) return \"Por favor insira um número entre 1 e 12.\";\n   return meses.get(mes);\n }\n \n\\ No newline at end of file\n-console.log(mesesDoAno(12));\n+console.log(mesesDoAno(12));\n"
+                },
+                {
+                    "date": 1733178788635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,5 @@\n   if (mes < 1 || mes > 12) return \"Por favor insira um número entre 1 e 12.\";\n   return meses.get(mes);\n }\n \n-console.log(mesesDoAno(12));\n\\ No newline at end of file\n+console.log(mesesDoAno(12));\n"
+                },
+                {
+                    "date": 1733178812113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,21 +1,21 @@\n-function mesesDoAno(mes) {\n-  let meses = new Map([\n-    [1, \"Janeiro\"],\n-    [2, \"Fevereiro\"],\n-    [3, \"Março\"],\n-    [4, \"Abril\"],\n-    [5, \"Maio\"],\n-    [6, \"Junho\"],\n-    [7, \"Julho\"],\n-    [8, \"Agosto\"],\n-    [9, \"Setembro\"],\n-    [10, \"Outubro\"],\n-    [11, \"Novembro\"],\n-    [12, \"Dezembro\"],\n+function monthsOfTheYear(month) {\n+  let months = new Map([\n+    [1, \"January\"],\n+    [2, \"February\"],\n+    [3, \"March\"],\n+    [4, \"April\"],\n+    [5, \"May\"],\n+    [6, \"June\"],\n+    [7, \"July\"],\n+    [8, \"August\"],\n+    [9, \"September\"],\n+    [10, \"October\"],\n+    [11, \"November\"],\n+    [12, \"December\"],\n   ]);\n \n-  if (mes < 1 || mes > 12) return \"Por favor insira um número entre 1 e 12.\";\n-  return meses.get(mes);\n+  if (month < 1 || month > 12) return \"Please enter a number between 1 and 12.\";\n+  return months.get(month);\n }\n \n-console.log(mesesDoAno(12));\n+console.log(monthsOfTheYear(12)); // Output: \"December\"\n"
+                }
+            ],
+            "date": 1733178176039,
+            "name": "Commit-0",
+            "content": "function calculaModa(array) {\n  let count = {};\n  let maxCount = 0;\n  let moda = null;\n\n  for (let i = 0; i < array.length; i++) {\n    const item = array[i];\n    if (count[item]) {\n      count[item]++;\n    } else {\n      count[item] = 1;\n    }\n\n    if (count[item] > maxCount) {\n      maxCount = count[item];\n      moda = item;\n    }\n  }\n\n  return {\n    moda: moda,\n    count: maxCount,\n  };\n}\n"
+        }
+    ]
+}

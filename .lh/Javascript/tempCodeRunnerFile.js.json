@@ -1,0 +1,38 @@
+{
+    "sourceFile": "Javascript/tempCodeRunnerFile.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1733217570139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733217580285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n function subtraiDias(data, dias) {\n   const novaData = new Date(data);\n-  novaData.setDate(novaData.getDate() - dias).split(\"T\");\n+  novaData.setDate(novaData.getDate() - dias);\n   return novaData;\n }\n console.log(subtraiDias(2024, 5, 3));\n"
+                },
+                {
+                    "date": 1733217587775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n function subtraiDias(data, dias) {\n-  const novaData = new Date(data);\n+  const novaData = new Date(data).split(\"T\");\n   novaData.setDate(novaData.getDate() - dias);\n   return novaData;\n }\n console.log(subtraiDias(2024, 5, 3));\n"
+                },
+                {
+                    "date": 1733217695980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n function subtraiDias(data, dias) {\n-  const novaData = new Date(data).split(\"T\");\n+  const novaData = new Date(data);\n   novaData.setDate(novaData.getDate() - dias);\n-  return novaData;\n+  return novaData.toISOString().split(\"T\")[0];\n }\n console.log(subtraiDias(2024, 5, 3));\n"
+                },
+                {
+                    "date": 1733217816505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-function subtraiDias(data, dias) {\n-  const novaData = new Date(data);\n-  novaData.setDate(novaData.getDate() - dias);\n-  return novaData.toISOString().split(\"T\")[0];\n-}\n-console.log(subtraiDias(2024, 5, 3));\n+// function subtraiDias(data, dias) {\n+//   const novaData = new Date(data);\n+//   novaData.setDate(novaData.getDate() - dias);\n+//   return novaData.toISOString().split(\"T\")[0];\n+// }\n+// console.log(subtraiDias(2024, 5, 3));\n"
+                },
+                {
+                    "date": 1733217838374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,4 +3,11 @@\n //   novaData.setDate(novaData.getDate() - dias);\n //   return novaData.toISOString().split(\"T\")[0];\n // }\n // console.log(subtraiDias(2024, 5, 3));\n+function adicionaSemanas(data, semanas) {\n+  const novaData = new Date(data);\n+  novaData.setDate(novaData.getDate() + semanas * 7);\n+  return novaData;\n+}\n+console.log(adicionaSemanas(2024, 5, 3));\n+\n"
+                }
+            ],
+            "date": 1733217570139,
+            "name": "Commit-0",
+            "content": "function subtraiDias(data, dias) {\n  const novaData = new Date(data);\n  novaData.setDate(novaData.getDate() - dias).split(\"T\");\n  return novaData;\n}\nconsole.log(subtraiDias(2024, 5, 3));\n"
+        }
+    ]
+}

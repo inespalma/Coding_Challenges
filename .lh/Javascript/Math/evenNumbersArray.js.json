@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Javascript/Math/evenNumbersArray.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1733222693683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1733222693683,
+            "name": "Commit-0",
+            "content": "function evenNumbersArray(array) {\n  return array.filter((num) => num % 2 === 0);\n}\n\nconsole.log(evenNumbersArray([2, 3, 4, 5, 6]));\n// Output: [2, 4, 6]\n"
+        }
+    ]
+}

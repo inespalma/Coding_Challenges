@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Javascript/Arrays/getMostRecentDate.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1733260598319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733260622603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-//Spread Operator\n+//Using Spread Operator\n function getMostRecentDates(...dates) {\n   // ...dates - [ '2022-05-01', '2022-04-30', '2022-06-15', '2021-12-31' ]\n   return dates.reduce((mostRecent, currentDate) =>\n     Date.parse(currentDate) > Date.parse(mostRecent) ? currentDate : mostRecent\n"
+                }
+            ],
+            "date": 1733260598319,
+            "name": "Commit-0",
+            "content": "//Spread Operator\nfunction getMostRecentDates(...dates) {\n  // ...dates - [ '2022-05-01', '2022-04-30', '2022-06-15', '2021-12-31' ]\n  return dates.reduce((mostRecent, currentDate) =>\n    Date.parse(currentDate) > Date.parse(mostRecent) ? currentDate : mostRecent\n  );\n}\n\nconsole.log(\n  getMostRecentDates(\"2022-05-01\", \"2022-04-30\", \"2022-06-15\", \"2021-12-31\")\n);\n// Output: \"2022-06-15\"\n"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "sourceFile": "Javascript/date.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1733178950110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733178955989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n function dataMaisRecente(data1, data2) {\n   return Date.parse(data1) > Date.parse(data2) ? data1 : data2;\n }\n+\n+console.log(dataMaisRecente(\"2022-05-01\", \"2022-04-30\"));\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733178977424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n function dataMaisRecente(data1, data2) {\n-  return Date.parse(data1) > Date.parse(data2) ? data1 : data2;\n+  return Date(data1) > Date.parse(data2) ? data1 : data2;\n }\n \n console.log(dataMaisRecente(\"2022-05-01\", \"2022-04-30\"));\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733179020444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n function dataMaisRecente(data1, data2) {\n-  return Date(data1) > Date.parse(data2) ? data1 : data2;\n+  return Date.parse(data1) > Date.parse(data2) ? data1 : data2;\n }\n \n\\ No newline at end of file\n-console.log(dataMaisRecente(\"2022-05-01\", \"2022-04-30\"));\n+console.log(dataMaisRecente(\"2022-05-01\", \"2022-04-30\"));\n"
+                },
+                {
+                    "date": 1733179053126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-function dataMaisRecente(data1, data2) {\n-  return Date.parse(data1) > Date.parse(data2) ? data1 : data2;\n+function getMostRecentDate(date1, date2) {\n+  return Date.parse(date1) > Date.parse(date2) ? date1 : date2;\n }\n\\ No newline at end of file\n \n-console.log(dataMaisRecente(\"2022-05-01\", \"2022-04-30\"));\n+console.log(getMostRecentDate(\"2022-05-01\", \"2022-04-30\"));\n"
+                }
+            ],
+            "date": 1733178950110,
+            "name": "Commit-0",
+            "content": "function dataMaisRecente(data1, data2) {\n  return Date.parse(data1) > Date.parse(data2) ? data1 : data2;\n}\n"
+        }
+    ]
+}

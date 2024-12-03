@@ -1,0 +1,50 @@
+{
+    "sourceFile": "Javascript/tst.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1733222003896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733222156259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n-function arrayDePares(array){\n-    if(array %2===0){\n-        return array\n-    }\n+function arrayDePares(array) {\n+  if (array % 2 === 0) {\n+    return array;\n\\ No newline at end of file\n+  }\n }\n \n-console.log(arrayDePares(2))\n+console.log(arrayDePares(2));\n"
+                },
+                {
+                    "date": 1733222178711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,5 @@\n     return array;\n   }\n }\n \n-console.log(arrayDePares(2));\n\\ No newline at end of file\n+console.log(arrayDePares([2, 3, 4, 5, 6]));\n"
+                },
+                {
+                    "date": 1733222338026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function arrayDePares(array) {\n   if (array % 2 === 0) {\n-    return array;\n-  }\n+    return array.filter((num) => num % 2 === 0);\n+  \n }\n \n console.log(arrayDePares([2, 3, 4, 5, 6]));\n"
+                },
+                {
+                    "date": 1733222347320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function arrayDePares(array) {\n   if (array % 2 === 0) {\n     return array.filter((num) => num % 2 === 0);\n-  \n+  }\n }\n \n console.log(arrayDePares([2, 3, 4, 5, 6]));\n"
+                },
+                {
+                    "date": 1733222358954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,5 @@\n     return array.filter((num) => num % 2 === 0);\n   }\n }\n \n-console.log(arrayDePares([2, 3, 4, 5, 6]));\n+console.log(arrayDePares([2, 3, 4, 5, 6])); // Saída: [2, 4, 6]\n"
+                },
+                {
+                    "date": 1733222371407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,5 @@\n function arrayDePares(array) {\n-  if (array % 2 === 0) {\n-    return array.filter((num) => num % 2 === 0);\n-  }\n+  return array.filter((num) => num % 2 === 0);\n }\n \n console.log(arrayDePares([2, 3, 4, 5, 6])); // Saída: [2, 4, 6]\n"
+                },
+                {
+                    "date": 1733222616006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n-function arrayDePares(array) {\n-  return array.filter((num) => num % 2 === 0);\n-}\n-\n-console.log(arrayDePares([2, 3, 4, 5, 6])); // Saída: [2, 4, 6]\n+function evenNumbersArray(array) {\n+    return array.filter((num) => num % 2 === 0);\n+  }\n+  \n+  console.log(evenNumbersArray([2, 3, 4, 5, 6])); // Output: [2, 4, 6]\n+  `\n+  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733222625596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,5 @@\n function evenNumbersArray(array) {\n-    return array.filter((num) => num % 2 === 0);\n-  }\n-  \n-  console.log(evenNumbersArray([2, 3, 4, 5, 6])); // Output: [2, 4, 6]\n-  `\n-  \n\\ No newline at end of file\n+  return array.filter((num) => num % 2 === 0);\n+}\n+\n+console.log(evenNumbersArray([2, 3, 4, 5, 6])); // Output: [2, 4, 6]\n"
+                }
+            ],
+            "date": 1733222003896,
+            "name": "Commit-0",
+            "content": "function arrayDePares(array){\n    if(array %2===0){\n        return array\n    }\n}\n\nconsole.log(arrayDePares(2))"
+        }
+    ]
+}
