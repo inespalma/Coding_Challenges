@@ -1,0 +1,114 @@
+{
+    "sourceFile": "Javascript/sdad,js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 24,
+            "patches": [
+                {
+                    "date": 1733271999732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733272016940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n function diaDaSemanaPorExtensoBilingue(data, lingua) {\n   console.log(data);\n-  const lingua = new Map[(\"pt\", \"en\")]([\n-    [\"segunda\", \"segunda\"],\n-    [\"terca\", \"terca\"],\n-  ]);\n+//   const lingua = new Map[(\"pt\", \"en\")]([\n+//     [\"segunda\", \"segunda\"],\n+//     [\"terca\", \"terca\"],\n+//   ]);\n }\n \n console.log(diaDaSemanaPorExtensoBilingue(\"segunda\", \"pt\"));\n"
+                },
+                {
+                    "date": 1733272272522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,23 @@\n function diaDaSemanaPorExtensoBilingue(data, lingua) {\n   console.log(data);\n-//   const lingua = new Map[(\"pt\", \"en\")]([\n-//     [\"segunda\", \"segunda\"],\n-//     [\"terca\", \"terca\"],\n-//   ]);\n+  const daysInPortuguese = [\n+    \"Domingo\",\n+    \"Segunda-feira\",\n+    \"Terça-feira\",\n+    \"Quarta-feira\",\n+    \"Quinta-feira\",\n+    \"Sexta-feira\",\n+    \"Sábado\",\n+  ];\n+  const daysInEnglish = [\n+    \"Sunday\",\n+    \"Monday\",\n+    \"Tuesday\",\n+    \"Wednesday\",\n+    \"Thursday\",\n+    \"Friday\",\n+    \"Saturday\",\n+  ];\n }\n \n-console.log(diaDaSemanaPorExtensoBilingue(\"segunda\", \"pt\"));\n+console.log(diaDaSemanaPorExtensoBilingue(2006, 03, 04, \"pt\"));\n"
+                },
+                {
+                    "date": 1733272313071,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,23 +1,23 @@\n function diaDaSemanaPorExtensoBilingue(data, lingua) {\n   console.log(data);\n   const daysInPortuguese = [\n-    \"Domingo\",\n     \"Segunda-feira\",\n     \"Terça-feira\",\n     \"Quarta-feira\",\n     \"Quinta-feira\",\n     \"Sexta-feira\",\n     \"Sábado\",\n+    \"Domingo\",\n   ];\n   const daysInEnglish = [\n-    \"Sunday\",\n     \"Monday\",\n     \"Tuesday\",\n     \"Wednesday\",\n     \"Thursday\",\n     \"Friday\",\n     \"Saturday\",\n+    \"Sunday\",\n   ];\n }\n \n console.log(diaDaSemanaPorExtensoBilingue(2006, 03, 04, \"pt\"));\n"
+                },
+                {
+                    "date": 1733272334004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,5 +19,5 @@\n     \"Sunday\",\n   ];\n }\n \n-console.log(diaDaSemanaPorExtensoBilingue(2006, 03, 04, \"pt\"));\n+console.log(diaDaSemanaPorExtensoBilingue(\"2006,03,04\", \"pt\"));\n"
+                },
+                {
+                    "date": 1733272393737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,7 +17,13 @@\n     \"Friday\",\n     \"Saturday\",\n     \"Sunday\",\n   ];\n+\n+  if (lingua === \"pt\") {\n+    return daysInPortuguese[data.getDay()];\n+  } else if (lingua === \"en\") {\n+    return daysInEnglish[data.getDay()];\n+  }\n }\n \n console.log(diaDaSemanaPorExtensoBilingue(\"2006,03,04\", \"pt\"));\n"
+                },
+                {
+                    "date": 1733272851977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n \n   if (lingua === \"pt\") {\n     return daysInPortuguese[data.getDay()];\n   } else if (lingua === \"en\") {\n+    console.log(daysInEnglish);\n     return daysInEnglish[data.getDay()];\n   }\n }\n \n"
+                },
+                {
+                    "date": 1733273072899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n function diaDaSemanaPorExtensoBilingue(data, lingua) {\n   console.log(data);\n   const daysInPortuguese = [\n     \"Segunda-feira\",\n-    \"Terça-feira\",\n+    \"Terça-feira\",\n     \"Quarta-feira\",\n     \"Quinta-feira\",\n     \"Sexta-feira\",\n-    \"Sábado\",\n+    \"Sábado\",\n     \"Domingo\",\n   ];\n   const daysInEnglish = [\n     \"Monday\",\n@@ -18,13 +18,19 @@\n     \"Saturday\",\n     \"Sunday\",\n   ];\n \n+  // Ensure data is a Date object\n+  if (!(data instanceof Date)) {\n+    return \"Invalid Date\";\n+  }\n+\n   if (lingua === \"pt\") {\n     return daysInPortuguese[data.getDay()];\n   } else if (lingua === \"en\") {\n-    console.log(daysInEnglish);\n     return daysInEnglish[data.getDay()];\n   }\n }\n \n-console.log(diaDaSemanaPorExtensoBilingue(\"2006,03,04\", \"pt\"));\n+// Test cases\n+console.log(diaDaSemanaPorExtensoBilingue(\"2006-03-04\", \"pt\")); // Sábado\n+console.log(diaDaSemanaPorExtensoBilingue(new Date(2022, 3, 4), \"pt\")); // Segunda-feira\n"
+                },
+                {
+                    "date": 1733297932709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,5 +32,4 @@\n }\n \n // Test cases\n console.log(diaDaSemanaPorExtensoBilingue(\"2006-03-04\", \"pt\")); // Sábado\n-console.log(diaDaSemanaPorExtensoBilingue(new Date(2022, 3, 4), \"pt\")); // Segunda-feira\n"
+                },
+                {
+                    "date": 1733297998909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,4 +32,5 @@\n }\n \n // Test cases\n console.log(diaDaSemanaPorExtensoBilingue(\"2006-03-04\", \"pt\")); // Sábado\n+console.log(diaDaSemanaPorExtensoBilingue(new Date(\"2006-03-04\"), \"pt\")); // Sábado\n"
+                },
+                {
+                    "date": 1733298005600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,6 +31,6 @@\n   }\n }\n \n // Test cases\n-console.log(diaDaSemanaPorExtensoBilingue(\"2006-03-04\", \"pt\")); // Sábado\n+// console.log(diaDaSemanaPorExtensoBilingue(\"2006-03-04\", \"pt\")); // Sábado\n console.log(diaDaSemanaPorExtensoBilingue(new Date(\"2006-03-04\"), \"pt\")); // Sábado\n"
+                },
+                {
+                    "date": 1733298021314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,6 +31,5 @@\n   }\n }\n \n // Test cases\n-// console.log(diaDaSemanaPorExtensoBilingue(\"2006-03-04\", \"pt\")); // Sábado\n console.log(diaDaSemanaPorExtensoBilingue(new Date(\"2006-03-04\"), \"pt\")); // Sábado\n"
+                },
+                {
+                    "date": 1733298043931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n     \"Sexta-feira\",\n     \"Sábado\",\n     \"Domingo\",\n   ];\n+\n   const daysInEnglish = [\n     \"Monday\",\n     \"Tuesday\",\n     \"Wednesday\",\n@@ -30,6 +31,5 @@\n     return daysInEnglish[data.getDay()];\n   }\n }\n \n-// Test cases\n console.log(diaDaSemanaPorExtensoBilingue(new Date(\"2006-03-04\"), \"pt\")); // Sábado\n"
+                },
+                {
+                    "date": 1733298079255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     return \"Invalid Date\";\n   }\n \n   if (lingua === \"pt\") {\n-    return daysInPortuguese[data.getDay()];\n+    // return daysInPortuguese[data.getDay()];\n   } else if (lingua === \"en\") {\n     return daysInEnglish[data.getDay()];\n   }\n }\n"
+                },
+                {
+                    "date": 1733298091108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,11 +25,11 @@\n     return \"Invalid Date\";\n   }\n \n   if (lingua === \"pt\") {\n-    // return daysInPortuguese[data.getDay()];\n+    return daysInPortuguese[data.getDay()];\n   } else if (lingua === \"en\") {\n-    return daysInEnglish[data.getDay()];\n+    // return daysInEnglish[data.getDay()];\n   }\n }\n \n console.log(diaDaSemanaPorExtensoBilingue(new Date(\"2006-03-04\"), \"pt\")); // Sábado\n"
+                },
+                {
+                    "date": 1733298110271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n \n   if (lingua === \"pt\") {\n     return daysInPortuguese[data.getDay()];\n   } else if (lingua === \"en\") {\n-    // return daysInEnglish[data.getDay()];\n+    return daysInEnglish[data.getDay()];\n   }\n }\n \n console.log(diaDaSemanaPorExtensoBilingue(new Date(\"2006-03-04\"), \"pt\")); // Sábado\n"
+                },
+                {
+                    "date": 1733298360884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,14 @@\n function diaDaSemanaPorExtensoBilingue(data, lingua) {\n   console.log(data);\n   const daysInPortuguese = [\n+    \"Domingo\",\n     \"Segunda-feira\",\n     \"Terça-feira\",\n     \"Quarta-feira\",\n     \"Quinta-feira\",\n     \"Sexta-feira\",\n     \"Sábado\",\n-    \"Domingo\",\n   ];\n \n   const daysInEnglish = [\n     \"Monday\",\n"
+                },
+                {
+                    "date": 1733298366578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,15 +10,15 @@\n     \"Sábado\",\n   ];\n \n   const daysInEnglish = [\n+    \"Sunday\",\n     \"Monday\",\n     \"Tuesday\",\n     \"Wednesday\",\n     \"Thursday\",\n     \"Friday\",\n     \"Saturday\",\n-    \"Sunday\",\n   ];\n \n   // Ensure data is a Date object\n   if (!(data instanceof Date)) {\n"
+                },
+                {
+                    "date": 1733298437959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     \"Saturday\",\n   ];\n \n   // Ensure data is a Date object\n-  if (!(data instanceof Date)) {\n+  if (!(data instanceof Date) || isNaN(data.getTime())) {\n     return \"Invalid Date\";\n   }\n \n   if (lingua === \"pt\") {\n"
+                },
+                {
+                    "date": 1733298452736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,10 @@\n   if (lingua === \"pt\") {\n     return daysInPortuguese[data.getDay()];\n   } else if (lingua === \"en\") {\n     return daysInEnglish[data.getDay()];\n+  } else {\n+    return \"Unsupported language. Use 'pt' or 'en'.\";\n   }\n }\n \n console.log(diaDaSemanaPorExtensoBilingue(new Date(\"2006-03-04\"), \"pt\")); // Sábado\n"
+                },
+                {
+                    "date": 1733298608412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,5 +33,8 @@\n     return \"Unsupported language. Use 'pt' or 'en'.\";\n   }\n }\n \n-console.log(diaDaSemanaPorExtensoBilingue(new Date(\"2006-03-04\"), \"pt\")); // Sábado\n+console.log(diaDaSemanaPorExtensoBilingue(new Date(\"2024-12-04\"), \"pt\")); // quarta-feira\n+console.log(diaDaSemanaPorExtensoBilingue(new Date(\"2024-12-04\"), \"en\")); // wednesday\n+console.log(diaDaSemanaPorExtensoBilingue(\"Invalid Date\", \"pt\")); // Invalid date\n+console.log(diaDaSemanaPorExtensoBilingue(new Date(), \"fr\")); /\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733298622888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,5 +36,5 @@\n \n console.log(diaDaSemanaPorExtensoBilingue(new Date(\"2024-12-04\"), \"pt\")); // quarta-feira\n console.log(diaDaSemanaPorExtensoBilingue(new Date(\"2024-12-04\"), \"en\")); // wednesday\n console.log(diaDaSemanaPorExtensoBilingue(\"Invalid Date\", \"pt\")); // Invalid date\n-console.log(diaDaSemanaPorExtensoBilingue(new Date(), \"fr\")); /\n\\ No newline at end of file\n+console.log(diaDaSemanaPorExtensoBilingue(new Date(), \"fr\")); // Unsupported language. Use 'pt' or 'en'.\n"
+                },
+                {
+                    "date": 1733298652815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n function diaDaSemanaPorExtensoBilingue(data, lingua) {\n-  console.log(data);\n   const daysInPortuguese = [\n     \"Domingo\",\n     \"Segunda-feira\",\n     \"Terça-feira\",\n"
+                },
+                {
+                    "date": 1733298676305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,8 @@\n     return \"Unsupported language. Use 'pt' or 'en'.\";\n   }\n }\n \n-console.log(diaDaSemanaPorExtensoBilingue(new Date(\"2024-12-04\"), \"pt\")); // quarta-feira\n-console.log(diaDaSemanaPorExtensoBilingue(new Date(\"2024-12-04\"), \"en\")); // wednesday\n+console.log(diaDaSemanaPorExtensoBilingue(new Date(\"2024-12-04\"), \"pt\")); // Quarta-feira\n+console.log(diaDaSemanaPorExtensoBilingue(new Date(\"2024-12-04\"), \"en\")); // Wednesday\n console.log(diaDaSemanaPorExtensoBilingue(\"Invalid Date\", \"pt\")); // Invalid date\n console.log(diaDaSemanaPorExtensoBilingue(new Date(), \"fr\")); // Unsupported language. Use 'pt' or 'en'.\n"
+                },
+                {
+                    "date": 1733298790667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-function diaDaSemanaPorExtensoBilingue(data, lingua) {\n+function getDayOfWeek(data, lingua) {\n   const daysInPortuguese = [\n     \"Domingo\",\n     \"Segunda-feira\",\n     \"Terça-feira\",\n@@ -32,8 +32,8 @@\n     return \"Unsupported language. Use 'pt' or 'en'.\";\n   }\n }\n \n-console.log(diaDaSemanaPorExtensoBilingue(new Date(\"2024-12-04\"), \"pt\")); // Quarta-feira\n-console.log(diaDaSemanaPorExtensoBilingue(new Date(\"2024-12-04\"), \"en\")); // Wednesday\n-console.log(diaDaSemanaPorExtensoBilingue(\"Invalid Date\", \"pt\")); // Invalid date\n-console.log(diaDaSemanaPorExtensoBilingue(new Date(), \"fr\")); // Unsupported language. Use 'pt' or 'en'.\n+console.log(getDayOfWeek(new Date(\"2024-12-04\"), \"pt\")); // Quarta-feira\n+console.log(getDayOfWeek(new Date(\"2024-12-04\"), \"en\")); // Wednesday\n+console.log(getDayOfWeek(\"Invalid Date\", \"pt\")); // Invalid date\n+console.log(getDayOfWeek(new Date(), \"fr\")); // Unsupported language. Use 'pt' or 'en'.\n"
+                }
+            ],
+            "date": 1733271999732,
+            "name": "Commit-0",
+            "content": "function diaDaSemanaPorExtensoBilingue(data, lingua) {\n  console.log(data);\n  const lingua = new Map[(\"pt\", \"en\")]([\n    [\"segunda\", \"segunda\"],\n    [\"terca\", \"terca\"],\n  ]);\n}\n\nconsole.log(diaDaSemanaPorExtensoBilingue(\"segunda\", \"pt\"));\n"
+        }
+    ]
+}
