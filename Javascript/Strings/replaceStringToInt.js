@@ -9,3 +9,4 @@ function replaceStringToInt(string) {
 }
 
 console.log(replaceStringToInt("Hello, hacker time. AEIOS."));
+// Output: "H3ll0, h4ck3r t1m3. 43105."

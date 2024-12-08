@@ -1,4 +1,4 @@
-function formataData(data) {
+function formatDateToDDMMYYYY(data) {
   if (!(data instanceof Date) || isNaN(data.getTime())) {
     return "Invalid Date";
   }
@@ -10,5 +10,7 @@ function formataData(data) {
   return `${day}-${month}-${year}`;
 }
 
-console.log(formataData(new Date("2024-12-04"))); // "04-12-2024"
-console.log(formataData(new Date())); // Current date in dd-mm-yyyy format
+console.log(formatDateToDDMMYYYY(new Date("2024-12-04")));
+// Output: "04-12-2024"
+console.log(formatDateToDDMMYYYY(new Date("2024-1-1")));
+// Output: "01-01-2024"

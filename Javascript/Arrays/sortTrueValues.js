@@ -1,10 +1,8 @@
-// <---  // Function that sort the array, placing true values first --->
+function sortCandlesOnFirst(candles) {
+  let sorted = candles.sort((a, b) => (b === true ? 1 : -1));
 
-function ordenaVelasAcesasPrimeiro(velas) {
-  let sort = velas.sort((a, b) => (b === true ? 1 : -1));
-
-  return sort;
+  return sorted;
 }
 
-console.log(ordenaVelasAcesasPrimeiro([true, false, false, true, true]));
+console.log(sortCandlesOnFirst([true, false, false, true, true]));
 // Output: [true, true, true, false, false]
