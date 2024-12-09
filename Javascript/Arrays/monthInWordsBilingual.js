@@ -1,5 +1,5 @@
-function mesPorExtensoBilingue(data, lingua) {
-  let mes = [
+function monthInWordsBilingual(data, language) {
+  let monthsPT = [
     "Janeiro",
     "Fevereiro",
     "Março",
@@ -14,7 +14,7 @@ function mesPorExtensoBilingue(data, lingua) {
     "Dezembro",
   ];
 
-  let month = [
+  let monthsEN = [
     "January",
     "February",
     "March",
@@ -32,14 +32,16 @@ function mesPorExtensoBilingue(data, lingua) {
   let date = new Date(data);
   let monthIndex = date.getMonth();
 
-  if (lingua === "pt") {
-    return mes[monthIndex];
-  } else if (lingua === "en") {
-    return month[monthIndex];
+  if (language === "pt") {
+    return monthsPT[monthIndex];
+  } else if (language === "en") {
+    return monthsEN[monthIndex];
   } else {
-    return "Língua não suportada";
+    return "Unsupported language";
   }
 }
 
-console.log(mesPorExtensoBilingue("2024-12-08", "pt")); // Dezembro
-console.log(mesPorExtensoBilingue("2024-12-08", "en")); // December
+console.log(monthInWordsBilingual("2024-12-08", "pt"));
+// Dezembro
+console.log(monthInWordsBilingual("2024-12-08", "en"));
+// December
