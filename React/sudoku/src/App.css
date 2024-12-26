@@ -1,0 +1,94 @@
+.sudoku-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20%;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+#errors {
+  margin-bottom: 20px;
+}
+
+#digits {
+  display: flex;
+  justify-self: center;
+}
+
+.digits-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.number {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.number-selected {
+  background-color: #ddd;
+}
+
+.board-container {
+  display: grid;
+  grid-template-columns: repeat(9, 40px);
+  gap: 1px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+}
+
+#board {
+  justify-items: center;
+  margin-top: 2%;
+}
+
+#lives {
+  justify-self: center;
+}
+
+.row {
+  display: flex;
+}
+
+.livesAndReset {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tile {
+  width: 40px;
+  height: 40px;
+  border: 0.1px solid rgb(95, 95, 95);
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.tile-start {
+  background-color: #eee;
+}
+
+.tile-empty {
+  background-color: #ffffff;
+}
+
+.tile-error {
+  background-color: red;
+}
